@@ -284,7 +284,7 @@ select {
 	-ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    background-image: url('../images/down-arrow.png');
+    background-image: url('../images/arrow/down-arrow.png');
     background-position: 96% 50%;
     background-repeat: no-repeat;
     outline: none;
@@ -459,8 +459,9 @@ input[type='checkbox'] {
 }
 
 .navbar .logo-image img {
-    width: 112px;
-	height: 30px;
+    width: 96px;
+	height: 96px;
+	background-color:#fff;
 }
 
 .navbar .logo-text {
@@ -1215,13 +1216,20 @@ a.back-to-top {
 	width: 42px;
 	height: 42px;
 	border-radius: 30px;
-	background: #636363 url("../images/up-arrow.png") no-repeat center 47%;
+	background: #636363 url("../images/arrow/up-arrow.png") no-repeat center 47%;
 	background-size: 18px 18px;
 	text-indent: -9999px;
 }
 
 a:hover.back-to-top {
 	background-color: #414141;
+}
+
+/***********************/
+/*     Travel          */
+/***********************/
+.travel-video {
+	text-align: center;
 }
 
 
