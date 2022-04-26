@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "appcs-www-ENVIRONMENT-001"
+    },
+    "appcsKeys": {
+      "value": [ 
+        "Shared:Sentinel", 
+        "Shared:Sentinel$Development" 
+      ]
+    },
+    "appcsValues": {
+      "value": [
+        "1",
+        "1"
+      ]
+    },
+    "contentType": {
+      "value": "text/plain"
+    },
+    "tags": {
+      "value": {
+        "tag1": "tag-value-1",
+        "tag2": "tag-value-2"
+      }
+    }
+  }
+}

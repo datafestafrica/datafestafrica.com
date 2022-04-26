@@ -1,0 +1,124 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - '*'
+  paths:
+    include:
+    - .github/infrastructure/*
+
+pr:
+  branches:
+    exclude:
+    - '*'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+parameters:
+  - name: appcsKeys
+    type: object
+    default: [
+      "Dfa:Www:StorageTables:ConnectionString"
+    ]
+  - name: appcsValues
+    type: object
+    default: [
+      "$(stConnection)"
+    ]
+      
+stages:
+  - stage: development
+    condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
+    variables:
+      - template: variables/development.yml
+
+    jobs:
+      - job: deploy_landing_zone
+        steps:
+          - template: steps/landingzone-infrastructure-steps.yml
+            parameters:
+              armPath: '$(infrastructurePath)'
+              subscriptionId: '$(subscriptionId)'
+              subscriptionName: '$(subscriptionName)'
+              rgName: '$(rgName)'
+              rgLocation: '$(rgLocation)'
+              appiName: '$(appiName)'
+              kvName: '$(kvName)'
+              stName: '$(stName)'
+              workName: '$(workName)'
+
+      - job: deploy_appcs_infrastructure
+        dependsOn: deploy_landing_zone
+        steps:
+          - template: steps/appcs-infrastructure-steps.yml
+            parameters:
+              armPath: '$(infrastructurePath)'
+              subscriptionId: '$(subscriptionId)'
+              subscriptionName: '$(subscriptionName)'
+              rgName: '$(rgName)'
+              rgLocation: '$(rgLocation)'
+              appcsName: '$(appcsName)'
+              appcsSku: '$(appcsSku)'              
+
+      - job: deploy_appcs_settings
+        dependsOn: deploy_appcs_infrastructure
+        steps:
+          - template: steps/appcs-settings-steps.yml
+            parameters:
+              armPath: '$(infrastructurePath)'
+              subscriptionName: '$(subscriptionName)'
+              subscriptionId: '$(subscriptionId)'
+              rgName: '$(rgName)'
+              rgLocation: '$(rgLocation)'
+              appcsName: '$(appcsName)'
+              appcsKeys: '${{ parameters.appcsKeys }}'
+              appcsValues: '${{ parameters.appcsValues }}'
+
+      - job: deploy_web_infrastructure
+        dependsOn: deploy_appcs_settings
+        steps:
+          - template: steps/web-infrastructure-steps.yml
+            parameters:
+              armPath: '$(infrastructurePath)'
+              subscriptionId: '$(subscriptionId)'
+              subscriptionName: '$(subscriptionName)'
+              rgName: '$(rgName)'
+              rgLocation: '$(rgLocation)'
+              rgEnvironment: '$(rgEnvironment)'
+              planName: '$(planName)'
+              webName: '$(webName)'
+
+  - stage: production
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+    variables:
+      - template: variables/production.yml
+
+    jobs:
+      - job: deploy_landing_zone
+        steps:
+          - template: steps/landingzone-infrastructure-steps.yml
+            parameters:
+              armPath: '$(infrastructurePath)'
+              subscriptionId: '$(subscriptionId)'
+              subscriptionName: '$(subscriptionName)'
+              rgName: '$(rgName)'
+              rgLocation: '$(rgLocation)'
+              appiName: '$(appiName)'
+              kvName: '$(kvName)'
+              stName: '$(stName)'
+              workName: '$(workName)'
+
+      - job: deploy_web_infrastructure
+        dependsOn: deploy_landing_zone
+        steps:
+          - template: steps/web-infrastructure-steps.yml
+            parameters:
+              armPath: '$(infrastructurePath)'
+              subscriptionId: '$(subscriptionId)'
+              subscriptionName: '$(subscriptionName)'
+              rgName: '$(rgName)'
+              rgLocation: '$(rgLocation)'
+              rgEnvironment: '$(rgEnvironment)'
+              planName: '$(planName)'
+              webName: '$(webName)'  

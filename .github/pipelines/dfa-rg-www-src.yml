@@ -1,0 +1,69 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - '*'
+  paths:
+    include:
+    - /*
+
+pr:
+  branches:
+    exclude:
+    - '*'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: development
+    condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
+    variables:
+      - template: variables/development.yml
+      
+    jobs:    
+      - job: package_web
+        steps:
+          - template: steps/webstatic-pack-steps.yml
+            parameters:
+              artifactsPath: '$(artifactsPath)'
+              archiveFile: '$(webArchiveFile)'
+              srcPath: '$(srcPath)'
+
+      - job: deploy_web
+        dependsOn: package_web
+        steps:
+          - template: steps/web-deploy-steps.yml
+            parameters:
+              appSettings: '-$(appcsEnvironmentVariable) $(appcsConnection) -$(stEnvironmentVariable) $(stConnection) -APPINSIGHTS_INSTRUMENTATIONKEY $(appiKey) -APPLICATIONINSIGHTS_CONNECTION_STRING $(appiConnection) -NODE_ENVIRONMENT $(rgEnvironment) '
+              artifactsPath: '$(artifactsPath)'
+              archiveFile: '$(webArchiveFile)'
+              webName: '$(webName)'
+              subscriptionId: '$(subscriptionId)'
+              subscriptionName: '$(subscriptionName)'
+
+  - stage: production
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+    variables:
+      - template: variables/production.yml    
+
+    jobs:
+      - job: package_web
+        steps:
+          - template: steps/webstatic-pack-steps.yml
+            parameters:
+              artifactsPath: '$(artifactsPath)'
+              archiveFile: '$(webArchiveFile)'
+              srcPath: '$(srcPath)'
+
+      - job: deploy_web
+        dependsOn: package_web
+        steps:
+          - template: steps/web-deploy-steps.yml
+            parameters:
+              appSettings: '-$(appcsEnvironmentVariable) $(appcsConnection) -$(stEnvironmentVariable) $(stConnection) -APPINSIGHTS_INSTRUMENTATIONKEY $(appiKey) -APPLICATIONINSIGHTS_CONNECTION_STRING $(appiConnection) -NODE_ENVIRONMENT $(rgEnvironment) '
+              artifactsPath: '$(artifactsPath)'
+              archiveFile: '$(webArchiveFile)'
+              webName: '$(webName)'
+              subscriptionId: '$(subscriptionId)'
+              subscriptionName: '$(subscriptionName)'

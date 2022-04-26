@@ -1,0 +1,17 @@
+variables:
+  - group: dfa-rg-www-dev
+  - template: common.yml
+  - name: rgEnvironment
+    value: 'Development'
+  - name: rgName
+    value: 'rg-www-dev-001'
+  - name: locationName
+    value: 'West US 2'
+  - name: 'appiName'
+    value: 'appi-www-dev-001'
+  - name: 'kvName'
+    value: 'kv-www-dev-001'
+  - name: storageName
+    value: 'stwwwdev001'
+  - name: workspaceName
+    value: 'work-www-dev-001'

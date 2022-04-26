@@ -1,0 +1,17 @@
+variables:
+  - group: dfa-rg-www-prod
+  - template: common.yml
+  - name: rgEnvironment
+    value: 'Production'
+  - name: rgName
+    value: 'rg-www-prod-001'
+  - name: locationName
+    value: 'West US 2'
+  - name: 'appiName'
+    value: 'appi-www-prod-001'
+  - name: 'kvName'
+    value: 'kv-www-prod-001'
+  - name: storageName
+    value: 'stwwwprod001'
+  - name: workspaceName
+    value: 'work-www-prod-001'
