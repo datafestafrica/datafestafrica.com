@@ -64,22 +64,8 @@ stages:
               appcsName: '$(appcsName)'
               appcsSku: '$(appcsSku)'              
 
-      - job: deploy_appcs_settings
-        dependsOn: deploy_appcs_infrastructure
-        steps:
-          - template: steps/appcs-settings-steps.yml
-            parameters:
-              armPath: '$(infrastructurePath)'
-              subscriptionName: '$(subscriptionName)'
-              subscriptionId: '$(subscriptionId)'
-              rgName: '$(rgName)'
-              rgLocation: '$(rgLocation)'
-              appcsName: '$(appcsName)'
-              appcsKeys: '${{ parameters.appcsKeys }}'
-              appcsValues: '${{ parameters.appcsValues }}'
-
       - job: deploy_web_infrastructure
-        dependsOn: deploy_appcs_settings
+        dependsOn: deploy_appcs_infrastructure
         steps:
           - template: steps/web-infrastructure-steps.yml
             parameters:
