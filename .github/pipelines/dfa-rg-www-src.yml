@@ -6,6 +6,8 @@ trigger:
   paths:
     include:
     - /*
+    exclude:
+    - .github/*
 
 pr:
   branches:
