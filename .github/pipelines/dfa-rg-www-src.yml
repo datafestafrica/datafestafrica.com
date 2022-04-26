@@ -55,7 +55,6 @@ stages:
               rgEnvironment: '$(rgEnvironment)'
               webName: '$(webName)'
 
-
   - stage: production
     condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
     variables:
