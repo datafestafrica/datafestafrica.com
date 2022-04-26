@@ -5,13 +5,13 @@ variables:
     value: 'Development'
   - name: rgName
     value: 'rg-www-dev-001'
-  - name: locationName
+  - name: rgLocation
     value: 'West US 2'
   - name: 'appiName'
     value: 'appi-www-dev-001'
   - name: 'kvName'
     value: 'kv-www-dev-001'
-  - name: storageName
+  - name: stName
     value: 'stwwwdev001'
-  - name: workspaceName
+  - name: workName
     value: 'work-www-dev-001'
