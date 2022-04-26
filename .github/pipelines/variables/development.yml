@@ -15,7 +15,13 @@ variables:
     value: 'appi-www-dev-022'
   - name: 'kvName'
     value: 'kv-www-dev-022'
+  - name: planName
+    value: 'plan-www-dev-022'
+  - name: planSku
+    value: 'F1'
   - name: stName
     value: 'stwwwdev022'
+  - name: webName
+    value: 'web-www-dev-022'
   - name: workName
     value: 'work-www-dev-022'
