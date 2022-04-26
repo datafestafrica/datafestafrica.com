@@ -14,10 +14,16 @@ parameters:
       - name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
         value: '$(appiKey)'
         slotSetting: false
+      - name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
+        value: '$(appiKey)'
+        slotSetting: false
       - name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
         value: '$(appiConnection)'
         slotSetting: false        
       - name: 'ASPNETCORE_ENVIRONMENT'
+        value: '$(rgEnvironment)'
+        slotSetting: false
+      - name: 'NODE_ENVIRONMENT'
         value: '$(rgEnvironment)'
         slotSetting: false
       - name: '$(appcsEnvironmentVariable)'

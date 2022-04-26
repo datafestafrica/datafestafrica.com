@@ -40,12 +40,21 @@ stages:
         steps:
           - template: steps/web-deploy-steps.yml
             parameters:
-              appSettings: '-$(appcsEnvironmentVariable) $(appcsConnection) -$(stEnvironmentVariable) $(stConnection) -APPINSIGHTS_INSTRUMENTATIONKEY $(appiKey) -APPLICATIONINSIGHTS_CONNECTION_STRING $(appiConnection) -NODE_ENVIRONMENT $(rgEnvironment) '
               artifactsPath: '$(artifactsPath)'
               archiveFile: '$(webArchiveFile)'
               webName: '$(webName)'
               subscriptionId: '$(subscriptionId)'
               subscriptionName: '$(subscriptionName)'
+
+      - job: settings_web
+        dependsOn: deploy_web
+        steps:
+          - template: steps/web-settings-steps.yml
+            parameters:
+              subscriptionName: '$(subscriptionName)'
+              rgEnvironment: '$(rgEnvironment)'
+              webName: '$(webName)'
+
 
   - stage: production
     condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
@@ -66,9 +75,17 @@ stages:
         steps:
           - template: steps/web-deploy-steps.yml
             parameters:
-              appSettings: '-$(appcsEnvironmentVariable) $(appcsConnection) -$(stEnvironmentVariable) $(stConnection) -APPINSIGHTS_INSTRUMENTATIONKEY $(appiKey) -APPLICATIONINSIGHTS_CONNECTION_STRING $(appiConnection) -NODE_ENVIRONMENT $(rgEnvironment) '
               artifactsPath: '$(artifactsPath)'
               archiveFile: '$(webArchiveFile)'
               webName: '$(webName)'
               subscriptionId: '$(subscriptionId)'
               subscriptionName: '$(subscriptionName)'
+
+      - job: settings_web
+        dependsOn: deploy_web
+        steps:
+          - template: steps/web-settings-steps.yml
+            parameters:
+              subscriptionName: '$(subscriptionName)'
+              rgEnvironment: '$(rgEnvironment)'
+              webName: '$(webName)'
