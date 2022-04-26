@@ -32,7 +32,7 @@ stages:
           - template: steps/webstatic-pack-steps.yml
             parameters:
               artifactsPath: '$(artifactsPath)'
-              archiveFile: '$(webArchiveFile)'
+              archiveFile: '$(archiveFile)'
               srcPath: '$(srcPath)'
 
       - job: deploy_web
@@ -41,7 +41,7 @@ stages:
           - template: steps/web-deploy-steps.yml
             parameters:
               artifactsPath: '$(artifactsPath)'
-              archiveFile: '$(webArchiveFile)'
+              archiveFile: '$(archiveFile)'
               webName: '$(webName)'
               subscriptionId: '$(subscriptionId)'
               subscriptionName: '$(subscriptionName)'
@@ -66,7 +66,7 @@ stages:
           - template: steps/webstatic-pack-steps.yml
             parameters:
               artifactsPath: '$(artifactsPath)'
-              archiveFile: '$(webArchiveFile)'
+              archiveFile: '$(archiveFile)'
               srcPath: '$(srcPath)'
 
       - job: deploy_web
@@ -75,7 +75,7 @@ stages:
           - template: steps/web-deploy-steps.yml
             parameters:
               artifactsPath: '$(artifactsPath)'
-              archiveFile: '$(webArchiveFile)'
+              archiveFile: '$(archiveFile)'
               webName: '$(webName)'
               subscriptionId: '$(subscriptionId)'
               subscriptionName: '$(subscriptionName)'
