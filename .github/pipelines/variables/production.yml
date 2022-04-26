@@ -14,7 +14,7 @@ variables:
   - name: planName
     value: 'plan-www-prod-2022'
   - name: planSku
-    value: 'F1'
+    value: 'B1'
   - name: stName
     value: 'stwwwprod2022'
   - name: webName
