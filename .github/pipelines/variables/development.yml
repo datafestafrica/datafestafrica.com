@@ -4,14 +4,14 @@ variables:
   - name: rgEnvironment
     value: 'Development'
   - name: rgName
-    value: 'rg-www-dev-001'
+    value: 'rg-www-dev-022'
   - name: rgLocation
     value: 'West US 2'
   - name: 'appiName'
-    value: 'appi-www-dev-001'
+    value: 'appi-www-dev-022'
   - name: 'kvName'
-    value: 'kv-www-dev-001'
+    value: 'kv-www-dev-022'
   - name: stName
-    value: 'stwwwdev001'
+    value: 'stwwwdev022'
   - name: workName
-    value: 'work-www-dev-001'
+    value: 'work-www-dev-022'
