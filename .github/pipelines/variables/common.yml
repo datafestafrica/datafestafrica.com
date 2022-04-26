@@ -1,6 +1,8 @@
 variables:
+  - name: subscriptionName
+    value: 'dfa-www-001'
   - name: artifactsPath
-    value: '$(Build.ArtifactStagingDirectory)'
+    value: '$(Build.ArtifactStagingDirectory)'    
   - name: tempPath
     value: '$(Agent.TempDirectory)/ymltemp'
   - name: archiveFile
