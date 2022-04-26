@@ -7,6 +7,10 @@ variables:
     value: 'rg-www-dev-022'
   - name: rgLocation
     value: 'West US 2'
+  - name: appcsName
+    value: 'appcs-www-dev-022'
+  - name: appcsSku
+    value: 'free'
   - name: 'appiName'
     value: 'appi-www-dev-022'
   - name: 'kvName'
