@@ -15,6 +15,9 @@ pr:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  - template: variables/common.yml
+
 stages:
   - stage: development
     condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
