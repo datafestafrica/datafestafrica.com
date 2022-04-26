@@ -1,0 +1,27 @@
+variables:
+  - group: dfa-rg-www-dev
+  - template: common.yml
+  - name: rgEnvironment
+    value: 'Development'
+  - name: rgName
+    value: 'rg-www-dev-2022'
+  - name: rgLocation
+    value: 'southafricanorth'
+  - name: appcsName
+    value: 'appcs-www-dev-2022'
+  - name: appcsSku
+    value: 'free'
+  - name: 'appiName'
+    value: 'appi-www-dev-2022'
+  - name: 'kvName'
+    value: 'kv-www-dev-2022'
+  - name: planName
+    value: 'plan-www-dev-2022'
+  - name: planSku
+    value: 'F1'
+  - name: stName
+    value: 'stwwwdev2022'
+  - name: webName
+    value: 'web-www-dev-2022'
+  - name: workName
+    value: 'work-www-dev-2022'

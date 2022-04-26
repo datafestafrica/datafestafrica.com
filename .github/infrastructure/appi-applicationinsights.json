@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "defaultValue": "web"
+    },
+     "tagsArray": {
+      "type": "object",
+      "defaultValue": {}
+    },
+    "requestSource": {
+      "type": "string",
+      "defaultValue": "IbizaAIExtension"
+    },
+    "workName": {
+      "type": "string"
+    }
+  },
+  "variables": {
+    "workspaceResourceId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/microsoft.operationalinsights/workspaces/', parameters('workName'))]"
+  },
+  "resources": [
+    {
+      "name": "[parameters('name')]",
+      "type": "microsoft.insights/components",
+      "location": "[resourceGroup().location]",
+      "tags": "[parameters('tagsArray')]",
+      "apiVersion": "2020-02-02-preview",
+      "dependsOn": [],
+      "properties": {
+        "ApplicationId": "[parameters('name')]",
+        "Application_Type": "[parameters('type')]",
+        "Flow_Type": "Redfield",
+        "Request_Source": "[parameters('requestSource')]",
+        "WorkspaceResourceId": "[variables('workspaceResourceId')]"
+      }
+    }
+  ]
+}
