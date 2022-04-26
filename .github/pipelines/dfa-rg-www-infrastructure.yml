@@ -76,6 +76,7 @@ stages:
               rgLocation: '$(rgLocation)'
               rgEnvironment: '$(rgEnvironment)'
               planName: '$(planName)'
+              planSku: '$(planSku)'
               webName: '$(webName)'
 
   - stage: production
@@ -110,4 +111,5 @@ stages:
               rgLocation: '$(rgLocation)'
               rgEnvironment: '$(rgEnvironment)'
               planName: '$(planName)'
-              webName: '$(webName)'  
+              planSku: '$(planSku)'
+              webName: '$(webName)'
