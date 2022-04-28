@@ -52,32 +52,32 @@ body, p {
 
 h1 {
 	color: #333333;
-	font: italic 700 2.75rem/3.25rem "Comfortaa", comfortaa;
+	font: normal 700 2.75rem/3.25rem "Comfortaa", comfortaa;
 }
 
 h2 {
 	color: #333333;
-	font: italic 700 2.25rem/2.75rem "Comfortaa", comfortaa;
+	font: normal 700 2.25rem/2.75rem "Comfortaa", comfortaa;
 }
 
 h3 {
 	color: #333333;
-	font: italic 700 1.875rem/2.25rem "Comfortaa", comfortaa;
+	font: normal 700 1.875rem/2.25rem "Comfortaa", comfortaa;
 }
 
 h4 {
 	color: #333333;
-	font: italic 700 1.625rem/2rem "Comfortaa", comfortaa;
+	font: normal 700 1.625rem/2rem "Comfortaa", comfortaa;
 }
 
 h5 {
 	color: #333333;
-	font: italic 700 1.375rem/1.625rem "Comfortaa", comfortaa;
+	font: normal 700 1.375rem/1.625rem "Comfortaa", comfortaa;
 }
 
 h6 {
 	color: #333333;
-	font: italic 700 1.125rem/1.375rem "Comfortaa", comfortaa;
+	font: normal 700 1.125rem/1.375rem "Comfortaa", comfortaa;
 }
 
 .p-large {
