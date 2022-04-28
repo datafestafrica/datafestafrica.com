@@ -52,22 +52,22 @@ body, p {
 
 h1 {
 	color: #333333;
-	font: 700 2.75rem/3.25rem "Comfortaa", comfortaa;
+	font: italic 700 2.75rem/3.25rem "Comfortaa", comfortaa;
 }
 
 h2 {
 	color: #333333;
-	font: 700 2.25rem/2.75rem "Comfortaa", comfortaa;
+	font: italic 700 2.25rem/2.75rem "Comfortaa", comfortaa;
 }
 
 h3 {
 	color: #333333;
-	font: 700 1.875rem/2.25rem "Comfortaa", comfortaa;
+	font: italic 700 1.875rem/2.25rem "Comfortaa", comfortaa;
 }
 
 h4 {
 	color: #333333;
-	font: 700 1.625rem/2rem "Comfortaa", comfortaa;
+	font: italic 700 1.625rem/2rem "Comfortaa", comfortaa;
 }
 
 h5 {
