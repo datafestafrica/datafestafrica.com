@@ -647,6 +647,10 @@ input[type='checkbox'] {
 	color: #ffffff;
 }
 
+.header p {
+	color: #ffffff;
+}
+
 .header .btn-outline-lg {
 	border-color: #ffffff;
 	color: #ffffff;
@@ -1055,6 +1059,13 @@ input[type='checkbox'] {
 	line-height: 1.75rem;
 }
 
+
+/********************/
+/*     Merch     */
+/********************/
+.max-100 {
+	max-width: 100%;
+}
 
 /********************/
 /*     Sponsors     */
