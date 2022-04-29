@@ -647,6 +647,10 @@ input[type='checkbox'] {
 	color: #ffffff;
 }
 
+.header p {
+	color: #ffffff;
+}
+
 .header .btn-outline-lg {
 	border-color: #ffffff;
 	color: #ffffff;
