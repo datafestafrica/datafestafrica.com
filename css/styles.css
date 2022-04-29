@@ -1413,7 +1413,7 @@ a:hover.back-to-top {
 		/* background-color: #0191FB;
         background: rgb(1,145,251);
         */
-        background: linear-gradient(to bottom right, #0191FB, #08F5DA);
+        background: linear-gradient(to bottom left, #08F5DA,  #0191FB);
         /* background: linear-gradient(270deg, rgba(1,145,251,1) 83%, rgba(0,212,255,1) 100%); */
 		border-bottom: 1px solid #6cbcf5;
 	}
