@@ -390,7 +390,7 @@ h6, .h6 {
 }
 
 .cls-frame-1, .cls-frame-2, .cls-frame-3, .cls-frame-4 {
-  fill: #FF5A01 !important;
+  fill: linear-gradient(to bottom right, #0191FB, #08F5DA) !important;
 }
 
 .display-1 {
