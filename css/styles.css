@@ -25,7 +25,7 @@ Table Of Contents:
 /*****************************************
 Colors:
 - Backgrounds - light gray #f6fbfd
-- Buttons, icons, navbar - red #FF5A01
+- Buttons, icons, navbar - red #0191FB
 - Headings text - navy blue #333333
 - Body text - dark gray #555555
 ******************************************/
@@ -52,32 +52,32 @@ body, p {
 
 h1 {
 	color: #333333;
-	font: italic 700 2.75rem/3.25rem "Comfortaa", comfortaa;
+	font: normal 700 2.75rem/3.25rem "Comfortaa", comfortaa;
 }
 
 h2 {
 	color: #333333;
-	font: italic 700 2.25rem/2.75rem "Comfortaa", comfortaa;
+	font: normal 700 2.25rem/2.75rem "Comfortaa", comfortaa;
 }
 
 h3 {
 	color: #333333;
-	font: italic 700 1.875rem/2.25rem "Comfortaa", comfortaa;
+	font: normal 700 1.875rem/2.25rem "Comfortaa", comfortaa;
 }
 
 h4 {
 	color: #333333;
-	font: italic 700 1.625rem/2rem "Comfortaa", comfortaa;
+	font: normal 700 1.625rem/2rem "Comfortaa", comfortaa;
 }
 
 h5 {
 	color: #333333;
-	font: italic 700 1.375rem/1.625rem "Comfortaa", comfortaa;
+	font: normal 700 1.375rem/1.625rem "Comfortaa", comfortaa;
 }
 
 h6 {
 	color: #333333;
-	font: italic 700 1.125rem/1.375rem "Comfortaa", comfortaa;
+	font: normal 700 1.125rem/1.375rem "Comfortaa", comfortaa;
 }
 
 .p-large {
@@ -123,7 +123,7 @@ a:hover {
 }
 
 .red {
-	color: #FF5A01;
+	color: #0191FB;
 }
 
 .bg-gray {
@@ -133,9 +133,9 @@ a:hover {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #FF5A01;
+	border: 1px solid #0191FB;
 	border-radius: 32px;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -146,16 +146,16 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #FF5A01; /* needs to stay here because of the color property of a tag */
+	color: #0191FB; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.75rem 1.625rem 2.75rem;
-	border: 1px solid #FF5A01;
+	border: 1px solid #0191FB;
 	border-radius: 32px;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -166,7 +166,7 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #FF5A01; /* needs to stay here because of the color property of a tag */
+	color: #0191FB; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -336,9 +336,9 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #FF5A01;
+	border: 1px solid #0191FB;
 	border-radius: 32px;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -349,7 +349,7 @@ input[type='checkbox'] {
 
 .form-control-submit-button:hover {
 	background-color: transparent;
-	color: #FF5A01;
+	color: #0191FB;
 }
 
 /* Fade-move Animation For Details Lightbox - Magnific Popup */
@@ -447,7 +447,7 @@ input[type='checkbox'] {
 /*     Navigation     */
 /**********************/
 .navbar {
-	/*background-color: #FF5A01;*/
+	/*background-color: #0191FB;*/
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
@@ -486,7 +486,7 @@ input[type='checkbox'] {
 	padding-left: 1rem;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -536,7 +536,7 @@ input[type='checkbox'] {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 	border: none;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 }
 
 .navbar .dropdown-item {
@@ -550,7 +550,7 @@ input[type='checkbox'] {
 }
 
 .navbar .dropdown-item:hover {
-	background-color: #FF5A01;
+	background-color: #0191FB;
 	color: #ffffff;
 }
 
@@ -559,7 +559,7 @@ input[type='checkbox'] {
 	height: 1px;
 	margin: 0.5rem auto 0.5rem auto;
 	border: none;
-	background-color: #e7b4be;
+	background-color: #bedcf0;
 }
 /* end of dropdown menu */
 
@@ -575,12 +575,12 @@ input[type='checkbox'] {
 }
 
 .navbar .fa-stack-1x {
-	color: #FF5A01;
+	color: #0191FB;
 	transition: all 0.2s ease;
 }
 
 .navbar .fa-stack:hover .fa-stack-2x {
-	color: #FF5A01;
+	color: #0191FB;
 }
 
 .navbar .fa-stack:hover .fa-stack-1x {
@@ -602,7 +602,6 @@ input[type='checkbox'] {
 	
 	padding-top: 7rem;
 	padding-bottom: 9rem;
-	/*background: linear-gradient(to bottom right, #FF5A01, rgba(239, 100, 57, 0.9)), url("/images/header/banner.png") center center no-repeat;*/
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/banner.png");
 	background-size: cover;
 	text-align: center;
@@ -758,7 +757,7 @@ input[type='checkbox'] {
 	margin-bottom: 2rem;
 	margin-left: auto;
 	border-radius: 4px;
-	background: linear-gradient(to bottom right, #FF5A01, #ef6439);
+	background: linear-gradient(to bottom right, #0191FB, #39a4f1);
 }
 
 .cards-1 .card .fas {
@@ -807,7 +806,7 @@ input[type='checkbox'] {
 }
 
 .basic-1 .keynote-time {
-	color: #FF5A01;
+	color: #0191FB;
 	font-weight: 700;
 	font-size: 1.125rem;
 	line-height: 1.625rem;
@@ -867,7 +866,7 @@ input[type='checkbox'] {
 	align-items: center;
 	height: 100%;
 	border-radius: 6px;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 	opacity: 0;
 	transition: all 0.2s ease;
 }
@@ -913,7 +912,7 @@ input[type='checkbox'] {
 }
 
 .cards-2 .fa-stack-2x {
-	color: #FF5A01;
+	color: #0191FB;
 	transition: all 0.2s ease;
 }
 
@@ -926,7 +925,7 @@ input[type='checkbox'] {
 }
 
 .cards-2 .fa-stack:hover .fa-stack-1x {
-	color: #FF5A01;
+	color: #0191FB;
 }
 
 
@@ -965,7 +964,7 @@ input[type='checkbox'] {
 	margin-bottom: 0.75rem;
 	margin-left: 0;
 	border: none;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 	text-align: left;
 }
 
@@ -989,7 +988,7 @@ input[type='checkbox'] {
 }
 
 .lightbox-basic .fa-stack .fa-stack-2x {
-	color: #FF5A01;
+	color: #0191FB;
 	transition: all 0.2s ease;
 }
 
@@ -1003,7 +1002,7 @@ input[type='checkbox'] {
 }
 
 .lightbox-basic .fa-stack:hover .fa-stack-1x {
-	color: #FF5A01;
+	color: #0191FB;
 }
 
 /* Close X Button */
@@ -1036,7 +1035,7 @@ input[type='checkbox'] {
 	height: 2.125rem;
 	margin-top: 0.25rem;
 	border-radius: 0.25rem;
-	background: linear-gradient(to bottom right, #FF5A01, #ef6439);
+	background: linear-gradient(to bottom right, #0191FB, #39a4f1);
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 1.25rem;
@@ -1144,7 +1143,7 @@ input[type='checkbox'] {
 .footer {
 	padding-top: 4rem;
 	padding-bottom: 1.5rem;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 }
 
 .footer a {
@@ -1183,12 +1182,12 @@ input[type='checkbox'] {
 }
 
 .footer .footer-col.third .fa-stack .fa-stack-1x {
-    color: #FF5A01;
+    color: #0191FB;
 	transition: all 0.2s ease;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-2x {
-    color: #FF5A01;
+    color: #0191FB;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-1x {
@@ -1201,7 +1200,7 @@ input[type='checkbox'] {
 /*********************/
 .copyright {
 	padding-bottom: 1rem;
-	background-color: #FF5A01;
+	background-color: #0191FB;
 	text-align: center;
 }
 
@@ -1224,7 +1223,7 @@ a.back-to-top {
 	width: 42px;
 	height: 42px;
 	border-radius: 30px;
-	background: #636363 url("../images/arrow/up-arrow.png") no-repeat center 47%;
+	background: #0191FB url("../images/arrow/up-arrow.png") no-repeat center 47%;
 	background-size: 18px 18px;
 	text-indent: -9999px;
 }
@@ -1247,7 +1246,7 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
-	background: linear-gradient(to bottom right, #FF5A01, #ef6439);
+	background: linear-gradient(to bottom right, #0191FB, #08F5DA);
 }
 
 .ex-header h1 {
@@ -1279,7 +1278,7 @@ a:hover.back-to-top {
 }
 
 .ex-cards-1 .card .fa-stack-2x {
-	color: #FF5A01;
+	color: #0191FB;
 }
 
 .ex-cards-1 .card .fa-stack-1x {
@@ -1400,8 +1399,12 @@ a:hover.back-to-top {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		background-color: #FF5A01;
-		border-bottom: 1px solid #f06b7f;
+		/* background-color: #0191FB;
+        background: rgb(1,145,251);
+        */
+        background: linear-gradient(to bottom right, #0191FB, #08F5DA);
+        /* background: linear-gradient(270deg, rgba(1,145,251,1) 83%, rgba(0,212,255,1) 100%); */
+		border-bottom: 1px solid #6cbcf5;
 	}
 
 	.offcanvas-collapse {
