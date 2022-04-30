@@ -1230,6 +1230,12 @@ input[type='checkbox'] {
 	color: #ffffff;
 }
 
+.footer .fa-twitter {
+	color: #ffffff;
+	transition: all 0.2s ease;
+	margin-top: 0.3rem;
+}
+
 
 /*********************/
 /*     Copyright     */
