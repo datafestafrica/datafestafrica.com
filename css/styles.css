@@ -33,7 +33,7 @@ Colors:
 @font-face {
 	font-family: 'Comfortaa';
 	src: url('../fonts/Comfortaa-VariableFont_wght.ttf');
-  }
+}
 
 
 /**************************/
@@ -41,12 +41,13 @@ Colors:
 /**************************/
 body,
 html {
-    width: 100%;
+	width: 100%;
 	height: 100%;
 }
 
-body, p {
-	color: #555555; 
+body,
+p {
+	color: #555555;
 	font: 400 1rem/1.625rem "Comfortaa", comfortaa;
 }
 
@@ -146,7 +147,8 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #0191FB; /* needs to stay here because of the color property of a tag */
+	color: #0191FB;
+	/* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -166,7 +168,8 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #0191FB; /* needs to stay here because of the color property of a tag */
+	color: #0191FB;
+	/* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -247,10 +250,10 @@ a:hover {
 	transition: all 0.2s ease;
 }
 
-.form-control-input:focus + .label-control,
-.form-control-input.notEmpty + .label-control,
-.form-control-textarea:focus + .label-control,
-.form-control-textarea.notEmpty + .label-control {
+.form-control-input:focus+.label-control,
+.form-control-input.notEmpty+.label-control,
+.form-control-textarea:focus+.label-control,
+.form-control-textarea.notEmpty+.label-control {
 	top: 0.125rem;
 	color: #555555;
 	opacity: 1;
@@ -260,7 +263,8 @@ a:hover {
 
 .form-control-input,
 .form-control-select {
-	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	display: block;
+	/* needed for proper display of the label in Firefox, IE, Edge */
 	width: 100%;
 	padding-top: 1.125rem;
 	padding-bottom: 0.125rem;
@@ -272,7 +276,8 @@ a:hover {
 	font-size: 0.875rem;
 	line-height: 1.875rem;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+	-webkit-appearance: none;
+	/* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -283,22 +288,24 @@ a:hover {
 }
 
 select {
-    /* you should keep these first rules in place to maintain cross-browser behavior */
-    -webkit-appearance: none;
+	/* you should keep these first rules in place to maintain cross-browser behavior */
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-image: url('../images/arrow/down-arrow.png');
-    background-position: 96% 50%;
-    background-repeat: no-repeat;
-    outline: none;
+	-o-appearance: none;
+	appearance: none;
+	background-image: url('../images/arrow/down-arrow.png');
+	background-position: 96% 50%;
+	background-repeat: no-repeat;
+	outline: none;
 }
 
 .form-control-textarea {
-	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	display: block;
+	/* used to eliminate a bottom gap difference between Chrome and IE/FF */
 	width: 100%;
-	height: 11rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 11rem;
+	/* used instead of html rows to normalize height between Chrome and IE/FF */
 	padding-top: 1.5rem;
 	padding-left: 1.3125rem;
 	border: 1px solid #d0d5e2;
@@ -313,7 +320,8 @@ select {
 .form-control-select:focus,
 .form-control-textarea:focus {
 	border: 1px solid #a1a1a1;
-	outline: none; /* Removes blue border on focus */
+	outline: none;
+	/* Removes blue border on focus */
 }
 
 .form-control-input:hover,
@@ -365,17 +373,17 @@ input[type='checkbox'] {
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
 	opacity: 1;
-	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	transform: translateY(0) perspective(37.5rem) rotateX(0);
 }
 
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
 	opacity: 0;
-	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
 }
 
 /* dark overlay, start state */
@@ -388,10 +396,12 @@ input[type='checkbox'] {
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
 	opacity: 0.8;
 }
+
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
 /* end of fade-move animation for details lightbox - magnific popup */
 
 /* Fade Animation For Image Lightbox And Morphtext - Magnific Popup  */
@@ -399,6 +409,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -408,6 +419,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -422,6 +434,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 1;
 	}
+
 	to {
 		opacity: 0;
 	}
@@ -431,6 +444,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 1;
 	}
+
 	to {
 		opacity: 0;
 	}
@@ -440,6 +454,7 @@ input[type='checkbox'] {
 	-webkit-animation: fadeOut 0.8s;
 	animation: fadeOut 0.8s;
 }
+
 /* end of fade animation for image lightbox and morphtext - magnific popup */
 
 
@@ -464,7 +479,7 @@ input[type='checkbox'] {
 }
 
 .navbar .logo-image img {
-    width: 96px;
+	width: 96px;
 	height: 96px;
 }
 
@@ -478,7 +493,8 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 3.25rem;
+	/* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -519,16 +535,17 @@ input[type='checkbox'] {
 
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
-	animation: fadeDropdown 0.2s; /* required for the fade animation */
+	animation: fadeDropdown 0.2s;
+	/* required for the fade animation */
 }
 
 @keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
+	0% {
+		opacity: 0;
+	}
 
-    100% {
-        opacity: 1;
+	100% {
+		opacity: 1;
 	}
 }
 
@@ -561,6 +578,7 @@ input[type='checkbox'] {
 	border: none;
 	background-color: #bedcf0;
 }
+
 /* end of dropdown menu */
 
 .navbar .fa-stack {
@@ -599,14 +617,14 @@ input[type='checkbox'] {
 /*****************/
 .header {
 	position: relative;
-	
+
 	padding-top: 7rem;
 	padding-bottom: 9rem;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/banner.png");
 	background-size: cover;
 	text-align: center;
 	background-position: center;
-	
+
 }
 
 .header .countdown {
@@ -998,12 +1016,12 @@ input[type='checkbox'] {
 }
 
 .lightbox-basic .fa-stack .fa-stack-1x {
-    color: #ffffff;
+	color: #ffffff;
 	transition: all 0.2s ease;
 }
 
 .lightbox-basic .fa-stack:hover .fa-stack-2x {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 .lightbox-basic .fa-stack:hover .fa-stack-1x {
@@ -1019,6 +1037,7 @@ input[type='checkbox'] {
 	height: 44px;
 	color: #000000;
 }
+
 /* end of close x button */
 
 
@@ -1134,6 +1153,11 @@ input[type='checkbox'] {
 	margin-left: 0.75rem;
 }
 
+.meet-team img {
+	max-height: 8rem;
+	margin: 0.3rem;
+}
+
 
 /******************/
 /*     Footer     */
@@ -1194,12 +1218,12 @@ input[type='checkbox'] {
 }
 
 .footer .footer-col.third .fa-stack .fa-stack-1x {
-    color: #0191FB;
+	color: #0191FB;
 	transition: all 0.2s ease;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-2x {
-    color: #0191FB;
+	color: #0191FB;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-1x {
@@ -1311,7 +1335,7 @@ a:hover.back-to-top {
 
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
 /* Min-width 768px */
 @media (min-width: 768px) {
 
@@ -1324,6 +1348,7 @@ a:hover.back-to-top {
 	.header .header-decoration {
 		height: 100px;
 	}
+
 	/* end of header */
 
 
@@ -1332,6 +1357,7 @@ a:hover.back-to-top {
 		padding-right: 2.5rem;
 		padding-left: 2.5rem;
 	}
+
 	/* end of introduction */
 
 
@@ -1354,6 +1380,7 @@ a:hover.back-to-top {
 	.basic-3 img:last-of-type {
 		margin-right: 0;
 	}
+
 	/* end of sponsors */
 
 
@@ -1361,10 +1388,11 @@ a:hover.back-to-top {
 	.footer-decoration {
 		height: 130px;
 	}
-	
+
 	.footer-decoration .footer-frame {
 		height: 100px;
 	}
+
 	/* end of footer */
 
 
@@ -1372,14 +1400,16 @@ a:hover.back-to-top {
 	.ex-basic-1 .text-box {
 		padding: 1.75rem 2rem 0.875rem 2rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width 768px */
 
 
 /* Min-width 992px */
 @media (min-width: 992px) {
-	
+
 	/* General Styles */
 	.h1-large {
 		font-size: 5.5rem;
@@ -1397,6 +1427,7 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of general styles */
 
 
@@ -1414,8 +1445,8 @@ a:hover.back-to-top {
 		/* background-color: #0191FB;
         background: rgb(1,145,251);
         */
-        background: linear-gradient(to bottom left, #08F5DA,  #0191FB);
-        /* background: linear-gradient(270deg, rgba(1,145,251,1) 83%, rgba(0,212,255,1) 100%); */
+		background: linear-gradient(to bottom left, #08F5DA, #0191FB);
+		/* background: linear-gradient(270deg, rgba(1,145,251,1) 83%, rgba(0,212,255,1) 100%); */
 		border-bottom: 1px solid #6cbcf5;
 	}
 
@@ -1441,7 +1472,7 @@ a:hover.back-to-top {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	
+
 	.navbar .nav-item .nav-link {
 		padding-right: 0.625rem;
 		padding-left: 0.625rem;
@@ -1459,11 +1490,12 @@ a:hover.back-to-top {
 	.navbar .social-icons {
 		margin-left: 0.5rem;
 	}
-	
+
 	.navbar .fa-stack {
 		margin-right: 0;
 		margin-left: 0.25rem;
 	}
+
 	/* end of navigation */
 
 
@@ -1479,6 +1511,7 @@ a:hover.back-to-top {
 		padding-top: 2.75rem;
 		font-size: 2.75rem;
 	}
+
 	/* end of header */
 
 
@@ -1486,6 +1519,7 @@ a:hover.back-to-top {
 	.form-1 .text-container {
 		margin-bottom: 0;
 	}
+
 	/* end of registration */
 
 
@@ -1497,24 +1531,25 @@ a:hover.back-to-top {
 	.basic-1 .text-container.first {
 		margin-bottom: 0;
 	}
-	
+
 	.basic-1 .keynote-details {
 		display: inline-block;
 		width: 80%;
 	}
-	
+
 	.basic-1 .keynote-time {
 		display: inline-block;
 		width: 19%;
 		text-align: right;
 		vertical-align: top;
 	}
-	
+
 	.basic-1 .keynote-divider {
 		margin: 2.125rem auto 3rem auto;
 	}
+
 	/* end of agenda */
-	
+
 
 	/* Sponsors */
 	.basic-3 p {
@@ -1522,6 +1557,7 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of sponsors */
 
 
@@ -1533,6 +1569,7 @@ a:hover.back-to-top {
 	.form-2 .text-container {
 		margin-top: 2rem;
 	}
+
 	/* end of contact */
 
 
@@ -1547,14 +1584,14 @@ a:hover.back-to-top {
 		margin-right: 1.75rem;
 		vertical-align: top;
 	}
-	
+
 	.footer .footer-col.second {
 		display: inline-block;
 		width: 320px;
 		margin-right: 1.75rem;
 		vertical-align: top;
 	}
-	
+
 	.footer .footer-col.third {
 		display: inline-block;
 		width: 224px;
@@ -1566,6 +1603,7 @@ a:hover.back-to-top {
 		margin-right: 0;
 		margin-left: 0.375rem;
 	}
+
 	/* end of footer */
 
 
@@ -1580,8 +1618,10 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width 992px */
 
 
@@ -1593,6 +1633,7 @@ a:hover.back-to-top {
 		padding-top: 14rem;
 		padding-bottom: 20rem;
 	}
+
 	/* end of header */
 
 
@@ -1605,6 +1646,7 @@ a:hover.back-to-top {
 	.form-1 .form-container {
 		margin-left: 2.5rem;
 	}
+
 	/* end of registration */
 
 
@@ -1620,11 +1662,11 @@ a:hover.back-to-top {
 	.slider-1 .swiper-container {
 		width: 100%;
 	}
-	
+
 	.slider-1 .swiper-button-prev {
 		left: -36px;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: -36px;
 	}
@@ -1633,6 +1675,7 @@ a:hover.back-to-top {
 		margin-top: 2.875rem;
 		margin-left: 4rem;
 	}
+
 	/* end of description */
 
 
@@ -1649,6 +1692,7 @@ a:hover.back-to-top {
 		margin-right: 3.375rem;
 		margin-left: 3.375rem;
 	}
+
 	/* end of highlights */
 
 
@@ -1664,10 +1708,11 @@ a:hover.back-to-top {
 	.basic-1 .keynote-details {
 		width: 85%;
 	}
-	
+
 	.basic-1 .keynote-time {
 		width: 14%;
 	}
+
 	/* end of agenda */
 
 
@@ -1688,6 +1733,7 @@ a:hover.back-to-top {
 		margin-right: 1.5rem;
 		margin-left: 0.75rem;
 	}
+
 	/* end of speakers */
 
 
@@ -1701,6 +1747,7 @@ a:hover.back-to-top {
 		margin-top: 1.25rem;
 		margin-left: 2rem;
 	}
+
 	/* end of speaker lightboxes */
 
 
@@ -1712,6 +1759,7 @@ a:hover.back-to-top {
 	.basic-2 .list-unstyled.second {
 		margin-left: 1rem;
 	}
+
 	/* end of questions */
 
 
@@ -1719,6 +1767,7 @@ a:hover.back-to-top {
 	.form-2 .text-container {
 		margin-right: 3.5rem;
 	}
+
 	/* end of contact */
 
 
@@ -1727,14 +1776,15 @@ a:hover.back-to-top {
 		width: 352px;
 		margin-right: 6rem;
 	}
-	
+
 	.footer .footer-col.second {
 		margin-right: 6.5rem;
 	}
-	
+
 	.footer .footer-col.third {
 		text-align: right;
 	}
+
 	/* end of footer */
 
 
@@ -1747,6 +1797,8 @@ a:hover.back-to-top {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width 1200px */
