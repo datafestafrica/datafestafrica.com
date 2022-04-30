@@ -53,7 +53,7 @@
 		$(this).html(event.strftime(format));
 	})
 	.on('finish.countdown', function(event) {
-	$(this).html('DATAFESTAFRICA has ended. Keep checking for information on next year!')
+	$(this).html('DataFestAfrica has ended. Keep checking for information on next year!')
 		.parent().addClass('disabled');
     });
 
