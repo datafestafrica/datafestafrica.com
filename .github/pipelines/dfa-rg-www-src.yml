@@ -22,7 +22,7 @@ variables:
 
 stages:
   - stage: development
-    condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
+    condition: and(ne(variables['Build.SourceBranch'], 'refs/heads/main'), ne(variables['Build.SourceBranch'], 'refs/heads/production'))
     variables:
       - template: variables/development.yml
       
