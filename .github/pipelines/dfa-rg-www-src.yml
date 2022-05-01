@@ -1,6 +1,8 @@
 trigger:
   batch: true
   branches:
+    exclude:
+    - 'main'
     include:
     - '*'
   paths:
@@ -22,7 +24,7 @@ variables:
 
 stages:
   - stage: development
-    condition: and(ne(variables['Build.SourceBranch'], 'refs/heads/main'), ne(variables['Build.SourceBranch'], 'refs/heads/production'))
+    condition: ne(variables['Build.SourceBranch'], 'refs/heads/production')
     variables:
       - template: variables/development.yml
       
