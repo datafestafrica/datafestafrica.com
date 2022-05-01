@@ -497,7 +497,6 @@ input[type='checkbox'] {
 	/* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
-	width: 100%;
 	padding-right: 1rem;
 	padding-left: 1rem;
 	overflow-y: auto;
@@ -1448,11 +1447,7 @@ a:hover.back-to-top {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		/* background-color: #0191FB;
-        background: rgb(1,145,251);
-        */
 		background: linear-gradient(to bottom left, #08F5DA, #0191FB);
-		/* background: linear-gradient(270deg, rgba(1,145,251,1) 83%, rgba(0,212,255,1) 100%); */
 		border-bottom: 1px solid #6cbcf5;
 	}
 
@@ -1471,7 +1466,7 @@ a:hover.back-to-top {
 
 	.offcanvas-collapse.open {
 		-webkit-transform: none;
-		transform: none;
+		transform: none;		
 	}
 
 	.navbar .navbar-nav {
