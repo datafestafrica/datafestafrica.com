@@ -977,6 +977,10 @@ input[type='checkbox'] {
 	margin-left: auto;
 }
 
+.lightbox-basic .image-container img {
+	max-width: 20rem;
+}
+
 .lightbox-basic h2 {
 	margin-bottom: 0.75rem;
 }

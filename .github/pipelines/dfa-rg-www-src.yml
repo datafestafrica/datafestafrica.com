@@ -56,7 +56,7 @@ stages:
               webName: '$(webName)'
 
   - stage: production
-    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/production')
     variables:
       - template: variables/production.yml    
 
