@@ -844,6 +844,11 @@ input[type='checkbox'] {
 }
 
 
+.col-lg-12.travel-video {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 /********************/
 /*     Speakers     */
 /********************/
