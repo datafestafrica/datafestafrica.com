@@ -844,10 +844,7 @@ input[type='checkbox'] {
 }
 
 
-.col-lg-12.travel-video {
-    display: flex;
-    flex-wrap: nowrap;
-}
+
 
 /********************/
 /*     Speakers     */
@@ -1811,6 +1808,11 @@ a:hover.back-to-top {
 	}
 
 	/* end of extra pages */
+}
+/* this is meant for making the video responsive for mobile in travel section*/
+.col-lg-12.travel-video {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 /* end of min-width 1200px */
