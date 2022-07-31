@@ -4,7 +4,7 @@ variables:
   - name: rgEnvironment
     value: 'Production'
   - name: rgName
-    value: 'dfa-rg-www-prod-2022'
+    value: 'rg-www-prod-2022'
   - name: rgLocation
     value: 'southafricanorth'
   - name: 'appiName'

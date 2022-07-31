@@ -4,7 +4,7 @@ variables:
   - name: rgEnvironment
     value: 'Development'
   - name: rgName
-    value: 'dfa-rg-www-dev-2022'
+    value: 'rg-www-dev-2022'
   - name: rgLocation
     value: 'southafricanorth'
   - name: 'appiName'
