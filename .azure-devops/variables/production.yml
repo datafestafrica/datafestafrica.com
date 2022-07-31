@@ -1,0 +1,23 @@
+variables:
+  - group: dfa-rg-www-prod
+  - template: common.yml
+  - name: rgEnvironment
+    value: 'Production'
+  - name: rgName
+    value: 'rg-www-prod-2022'
+  - name: rgLocation
+    value: 'southafricanorth'
+  - name: 'appiName'
+    value: 'appi-www-prod-2022'
+  - name: 'kvName'
+    value: 'kv-www-prod-2022'
+  - name: stName
+    value: 'stwwwprod2022'
+  - name: stappName
+    value: 'stapp-www-prod-2022'
+  - name: stappLocation
+    value: 'westeurope'
+  - name: stappSku
+    value: 'Standard'
+  - name: workName
+    value: 'work-www-prod-2022'

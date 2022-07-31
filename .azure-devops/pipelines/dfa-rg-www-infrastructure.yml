@@ -1,0 +1,107 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - '*'
+  paths:
+    include:
+    - .azure/*
+    - .azure-devops/*
+
+pr:
+  branches:
+    exclude:
+    - '*'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+parameters:
+  - name: subscriptionId
+    type: string
+    default: "$(subscriptionId)"
+  - name: subscriptionService 
+    type: string 
+    default: "dfa-www-001"
+
+variables:
+  - template: ../variables/common.yml
+      
+stages:
+  - stage: development
+    condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
+    variables:
+      - template: ../variables/development.yml
+
+    jobs:
+      - job: deploy_landing_zone
+        steps:
+          - template: ../steps/landingzone-infrastructure-steps.yml
+            parameters:
+              armPath: '$(infrastructurePath)'
+              subscriptionId: '${{ parameters.subscriptionId }}'
+              subscriptionService: '${{ parameters.subscriptionService }}'
+              rgName: '$(rgName)'
+              rgLocation: '$(rgLocation)'
+              appiName: '$(appiName)'
+              kvName: '$(kvName)'
+              stName: '$(stName)'
+              workName: '$(workName)'
+
+      - job: deploy_static_app
+        dependsOn: deploy_landing_zone
+        steps:
+          - template: ../steps/stapp-infrastructure-steps.yml
+            parameters:
+              apiLocation: '$(apiPathRelative)'
+              appArtifactLocation: 'build'
+              appLocation: '$(srcPathRelative)'
+              armPath: '$(infrastructurePath)'
+              branch: '$(Build.SourceBranchName)'
+              repositoryToken: '$(githubToken)'
+              repositoryUrl: '$(Build.Repository.Uri)'
+              stappName: '$(stappName)'
+              stappSku: '$(stappSku)'
+              subscriptionId: '${{ parameters.subscriptionId }}'
+              subscriptionService: '${{ parameters.subscriptionService }}'
+              rgName: '$(rgName)'
+              rgLocation: '$(stappLocation)'
+
+  - stage: production
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+    variables:
+      - template: ../variables/production.yml
+
+    jobs:
+      - job: deploy_landing_zone
+        steps:
+          - template: ../steps/landingzone-infrastructure-steps.yml
+            parameters:
+              armPath: '$(infrastructurePath)'
+              subscriptionId: '${{ parameters.subscriptionId }}'
+              subscriptionService: '${{ parameters.subscriptionService }}'
+              rgName: '$(rgName)'
+              rgLocation: '$(rgLocation)'
+              appiName: '$(appiName)'
+              kvName: '$(kvName)'
+              stName: '$(stName)'
+              workName: '$(workName)'
+
+      - job: deploy_static_app
+        dependsOn: deploy_landing_zone
+        steps:
+          - template: ../steps/stapp-infrastructure-steps.yml
+            parameters:
+              apiLocation: '$(apiPathRelative)'
+              appArtifactLocation: 'build'
+              appLocation: '$(srcPathRelative)'
+              armPath: '$(infrastructurePath)'
+              branch: '$(Build.SourceBranchName)'
+              repositoryToken: '$(githubToken)'
+              repositoryUrl: '$(Build.Repository.Uri)'
+              stappName: '$(stappName)'
+              stappSku: '$(stappSku)'
+              subscriptionId: '${{ parameters.subscriptionId }}'
+              subscriptionService: '${{ parameters.subscriptionService }}'
+              rgName: '$(rgName)'
+              rgLocation: '$(stappLocation)'

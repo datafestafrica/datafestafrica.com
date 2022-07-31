@@ -1,0 +1,15 @@
+variables:
+  - name: artifactsPath
+    value: '$(Build.ArtifactStagingDirectory)'
+  - name: archiveFile
+    value: 'archive.zip'
+  - name: infrastructurePath
+    value: '$(System.DefaultWorkingDirectory)/.azure'
+  - name: scriptsPath
+    value: '$(System.DefaultWorkingDirectory)/.azure-devops/scripts'
+  - name: srcPath
+    value: '$(System.DefaultWorkingDirectory)'
+  - name: srcPathRelative
+    value: '/'
+  - name: tempPath
+    value: '$(Agent.TempDirectory)/ymltemp'

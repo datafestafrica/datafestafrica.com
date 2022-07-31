@@ -1,0 +1,23 @@
+variables:
+  - group: dfa-rg-www-dev
+  - template: common.yml
+  - name: rgEnvironment
+    value: 'Development'
+  - name: rgName
+    value: 'rg-www-dev-2022'
+  - name: rgLocation
+    value: 'southafricanorth'
+  - name: 'appiName'
+    value: 'appi-www-dev-2022'
+  - name: 'kvName'
+    value: 'kv-www-dev-2022'
+  - name: stName
+    value: 'stwwwdev2022'
+  - name: stappName
+    value: 'stapp-www-dev-2022'
+  - name: stappLocation
+    value: 'westeurope'    
+  - name: stappSku
+    value: 'Free'
+  - name: workName
+    value: 'work-www-dev-2022'
