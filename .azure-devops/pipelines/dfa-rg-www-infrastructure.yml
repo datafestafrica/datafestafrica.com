@@ -65,7 +65,7 @@ stages:
               subscriptionId: '${{ parameters.subscriptionId }}'
               subscriptionService: '${{ parameters.subscriptionService }}'
               rgName: '$(rgName)'
-              rgLocation: '$(rgLocation)'
+              rgLocation: '$(stappLocation)'
 
   - stage: production
     condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
@@ -104,4 +104,4 @@ stages:
               subscriptionId: '${{ parameters.subscriptionId }}'
               subscriptionService: '${{ parameters.subscriptionService }}'
               rgName: '$(rgName)'
-              rgLocation: '$(rgLocation)'
+              rgLocation: '$(stappLocation)'
