@@ -6,7 +6,6 @@ trigger:
   paths:
     include:
     - .azure/*
-    - .azure-devops/*
 
 pr:
   branches:
