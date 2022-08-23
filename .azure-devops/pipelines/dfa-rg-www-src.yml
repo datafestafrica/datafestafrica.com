@@ -24,7 +24,7 @@ stages:
   - stage: development
     condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
     variables:
-      - template: variables/development.yml
+      - template: ../variables/development.yml
       
     jobs:    
       - job: package_web
