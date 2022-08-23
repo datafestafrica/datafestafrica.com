@@ -52,13 +52,13 @@ stages:
               archiveFile: '$(archiveFile)'
               webName: '$(webName)'
               subscriptionId: '$(subscriptionId)'
-              subscriptionService: '$(subscriptionService)'
+              subscriptionService: '${{ parameters.subscriptionService }}'
 
       - job: settings_web
         dependsOn: deploy_web
         steps:
           - template: ../steps/web-settings-steps.yml
             parameters:
-              subscriptionService: '$(subscriptionService)'
+              subscriptionService: '${{ parameters.subscriptionService }}'
               rgEnvironment: '$(rgEnvironment)'
               webName: '$(webName)'
