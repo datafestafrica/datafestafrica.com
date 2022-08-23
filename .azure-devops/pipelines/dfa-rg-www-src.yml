@@ -29,7 +29,7 @@ stages:
     jobs:    
       - job: package_web
         steps:
-          - template: steps/webstatic-pack-steps.yml
+          - template: ../steps/webstatic-pack-steps.yml
             parameters:
               artifactsPath: '$(artifactsPath)'
               archiveFile: '$(archiveFile)'
@@ -38,7 +38,7 @@ stages:
       - job: deploy_web
         dependsOn: package_web
         steps:
-          - template: steps/web-deploy-steps.yml
+          - template: ../steps/web-deploy-steps.yml
             parameters:
               artifactsPath: '$(artifactsPath)'
               archiveFile: '$(archiveFile)'
@@ -49,7 +49,7 @@ stages:
       - job: settings_web
         dependsOn: deploy_web
         steps:
-          - template: steps/web-settings-steps.yml
+          - template: ../steps/web-settings-steps.yml
             parameters:
               subscriptionName: '$(subscriptionName)'
               rgEnvironment: '$(rgEnvironment)'
