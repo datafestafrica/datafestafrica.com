@@ -132,6 +132,10 @@ a:hover {
 	background-color: #f6fbfd;
 }
 
+.bg-dimgray {
+	background-color: #6c757d;
+}
+
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
@@ -1148,6 +1152,11 @@ input[type='checkbox'] {
 
 .basic-3 h3 {
 	margin-bottom: 1rem;
+}
+
+.meet-sponsors img {
+	max-height: 8rem;
+	margin: 0.3rem;
 }
 
 /*******************/
