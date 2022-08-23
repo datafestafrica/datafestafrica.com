@@ -18,7 +18,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  - template: variables/common.yml
+  - template: ../variables/common.yml
 
 stages:
   - stage: development
