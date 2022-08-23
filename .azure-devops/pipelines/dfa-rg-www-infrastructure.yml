@@ -47,25 +47,6 @@ stages:
               stName: '$(stName)'
               workName: '$(workName)'
 
-      - job: deploy_static_app
-        dependsOn: deploy_landing_zone
-        steps:
-          - template: ../steps/stapp-infrastructure-steps.yml
-            parameters:
-              apiLocation: '$(apiPathRelative)'
-              appArtifactLocation: 'build'
-              appLocation: '$(srcPathRelative)'
-              armPath: '$(infrastructurePath)'
-              branch: '$(Build.SourceBranchName)'
-              repositoryToken: '$(githubToken)'
-              repositoryUrl: '$(Build.Repository.Uri)'
-              stappName: '$(stappName)'
-              stappSku: '$(stappSku)'
-              subscriptionId: '${{ parameters.subscriptionId }}'
-              subscriptionService: '${{ parameters.subscriptionService }}'
-              rgName: '$(rgName)'
-              rgLocation: '$(stappLocation)'
-
   - stage: production
     condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
     variables:

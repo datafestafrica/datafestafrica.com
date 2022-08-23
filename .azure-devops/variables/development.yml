@@ -17,12 +17,6 @@ variables:
     value: 'F1'
   - name: stName
     value: 'stwwwdev2022'
-  - name: stappName
-    value: 'stapp-www-dev-2022'
-  - name: stappLocation
-    value: 'westeurope'    
-  - name: stappSku
-    value: 'Free'
   - name: webName
     value: 'web-www-dev-2022'
   - name: workName
