@@ -18,6 +18,6 @@ variables:
   - name: stappLocation
     value: 'westeurope'
   - name: stappSku
-    value: 'Standard'
+    value: 'Free'
   - name: workName
     value: 'work-www-prod-2022'

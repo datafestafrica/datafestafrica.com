@@ -1,0 +1,66 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - '*'
+  paths:
+    include:
+    - /*
+    exclude:
+    - .azure/*
+    - .azure-devops/*
+    - .github/*
+
+pr:
+  branches:
+    exclude:
+    - '*'
+
+parameters:
+  - name: subscriptionId
+    type: string
+    default: "$(subscriptionId)"
+  - name: subscriptionService 
+    type: string 
+    default: "dfa-www-001"
+
+variables:
+  - template: ../variables/common.yml
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: development
+    condition: ne(variables['Build.SourceBranch'], 'refs/heads/main')
+    variables:
+      - template: ../variables/development.yml
+      
+    jobs:    
+      - job: package_web
+        steps:
+          - template: ../steps/webstatic-pack-steps.yml
+            parameters:
+              artifactsPath: '$(artifactsPath)'
+              archiveFile: '$(archiveFile)'
+              srcPath: '$(srcPath)'
+
+      - job: deploy_web
+        dependsOn: package_web
+        steps:
+          - template: ../steps/web-deploy-steps.yml
+            parameters:
+              artifactsPath: '$(artifactsPath)'
+              archiveFile: '$(archiveFile)'
+              webName: '$(webName)'
+              subscriptionId: '$(subscriptionId)'
+              subscriptionService: '${{ parameters.subscriptionService }}'
+
+      - job: settings_web
+        dependsOn: deploy_web
+        steps:
+          - template: ../steps/web-settings-steps.yml
+            parameters:
+              subscriptionService: '${{ parameters.subscriptionService }}'
+              rgEnvironment: '$(rgEnvironment)'
+              webName: '$(webName)'

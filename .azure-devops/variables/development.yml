@@ -11,13 +11,13 @@ variables:
     value: 'appi-www-dev-2022'
   - name: 'kvName'
     value: 'kv-www-dev-2022'
+  - name: planName
+    value: 'plan-www-dev-2022'
+  - name: planSku
+    value: 'F1'
   - name: stName
     value: 'stwwwdev2022'
-  - name: stappName
-    value: 'stapp-www-dev-2022'
-  - name: stappLocation
-    value: 'westeurope'    
-  - name: stappSku
-    value: 'Free'
+  - name: webName
+    value: 'web-www-dev-2022'
   - name: workName
     value: 'work-www-dev-2022'
