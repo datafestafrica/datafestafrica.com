@@ -910,7 +910,7 @@ input[type='checkbox'] {
 
 .cards-2 .card-image img {
 	border-radius: 6px;
-	max-width: 9rem;
+	max-height: 8rem;
 }
 
 .cards-2 .card-image .hover-overlay {
