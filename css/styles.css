@@ -897,7 +897,7 @@ input[type='checkbox'] {
 .cards-2 .card {
 	max-width: 340px;
 	margin-right: auto;
-	margin-bottom: 5rem;
+	margin-bottom: -100px;
 	margin-left: auto;
 	border: none;
 	background: transparent;
@@ -1115,6 +1115,267 @@ input[type='checkbox'] {
 	line-height: 1.75rem;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+   
+  }
+  
+
+  
+  .merch {
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-head {
+    position: relative;
+    height: 220px;
+    background: #0191FB;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #0191FB 8%, #08F5DA 83%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #0191FB 8%, #08F5DA 83%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #0191FB 8%, #08F5DA 83%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0191FB', endColorstr='#08F5DA', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    border-radius: 25px 25px 0 0;
+  }
+  
+  .card-logo {
+    width: 55px;
+    margin: 20px;
+  }
+  
+  .product-img {
+    position: relative;
+    left: 0;
+    height: 90%;
+    width: 90%;
+    margin-top: 14px;
+    margin-left: 5px;
+    border-radius: 25px 25px 0px 0px;
+  }
+  
+  .product-detail {
+    padding: 0 20px;
+    font-size: 11px;
+    color: #fff;
+  }
+  
+  .product-detail h2 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .back-text {
+    display: inline-block;
+    font-size: 125px;
+    font-weight: 900;
+    margin-left: -7px;
+    margin-top: -12px;
+    opacity: 0.1;
+  }
+  
+  .card-body {
+    height: 255px;
+    background: #fff;
+    border-radius: 0 0 25px 25px;
+  }
+  
+  .product-title {
+    padding: 20px 20px 5px 20px;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .product-title b {
+    font-weight: 900;
+    letter-spacing: 0px;
+  }
+  
+  .badge {
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    background: #0191FB;
+    padding: 2px 5px;
+    border-radius: 4px;
+    top: -2px;
+    margin-left: 5px;
+  }
+  
+  .product-caption {
+    display: block;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .product-rating {
+    padding: 0 20px;
+    font-size: 11px;
+  }
+  
+  .product-rating i.grey {
+    color: #acacab;
+  }
+  
+  .product-size h4 {
+    font-size: 11px;
+    padding: 0 21px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .ul-size {
+    margin-left: 15px;
+  }
+  
+  .ul-size li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .ul-size li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 11px;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 23px;
+    color: #000;
+  }
+  
+  .ul-size li a.active {
+    background: #f35e3d;
+    color: #fff;
+  }
+  
+  .product-size:before,
+  .product-size:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .product-color h4 {
+    font-size: 11px;
+    padding: 0 21px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .ul-color {
+    margin-left: 27px;
+  }
+  
+  .ul-color li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .ul-color li a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+  }
+  
+  .ul-color li a.orange {
+    background: #f35e3d;
+  }
+  
+  .ul-color li a.green {
+    background: #11e95b;
+  }
+  
+  .ul-color li a.yellow {
+    background: #ffd414;
+  }
+  
+  .ul-color li a.active:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    border: 1px solid #f35e3d;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    margin-left: -5px;
+    margin-top: -5px;
+  }
+  
+  .product-price {
+    position: absolute;
+    background: #0191FB;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: -13px;
+    margin-left: -130px;
+    box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+  }
+  
+  .product-price b {
+    margin-left: 9px;
+  }
+  .paystack-buynow {
+    position: absolute;
+   
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    border-radius: 7px;
+    margin-top: 35px;
+    margin-left: -100px;
+    
+  }
+  
+  
+  
+  .yt
+  {
+    position: fixed;
+    padding:7px 10px 3px 10px;
+    top: 5px;
+    right: 5px;
+    background: rgba(0,0,0,0.1);
+  }
+  
+  .yt:hover
+  {
+    background: rgba(0,0,0,0.2);
+  }
 
 /********************/
 /*     Merch     */
@@ -1158,6 +1419,128 @@ input[type='checkbox'] {
 	max-height: 8rem;
 	margin: 0.3rem;
 }
+h2{
+    text-align:center;
+    padding: 20px;
+  }
+  /* Slider */
+  
+  .slick-slide {
+      margin: 0px 20px;
+  }
+  
+  .slick-slide img {
+      width: 100%;
+  }
+  
+  .slick-slider
+  {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+              user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+          touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list
+  {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+  }
+  .slick-list:focus
+  {
+      outline: none;
+  }
+  .slick-list.dragging
+  {
+      cursor: pointer;
+      cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list
+  {
+      -webkit-transform: translate3d(0, 0, 0);
+         -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+           -o-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track
+  {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+  }
+  .slick-track:before,
+  .slick-track:after
+  {
+      display: table;
+      content: '';
+  }
+  .slick-track:after
+  {
+      clear: both;
+  }
+  .slick-loading .slick-track
+  {
+      visibility: hidden;
+  }
+  
+  .slick-slide
+  {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+  }
+  [dir='rtl'] .slick-slide
+  {
+      float: right;
+  }
+  .slick-slide img
+  {
+      display: block;
+  }
+  .slick-slide.slick-loading img
+  {
+      display: none;
+  }
+  .slick-slide.dragging img
+  {
+      pointer-events: none;
+  }
+  .slick-initialized .slick-slide
+  {
+      display: block;
+  }
+  .slick-loading .slick-slide
+  {
+      visibility: hidden;
+  }
+  .slick-vertical .slick-slide
+  {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+  }
+  .slick-arrow.slick-hidden {
+      display: none;
+  }
+
+
 
 /*******************/
 /*		Tweets			*/
@@ -1389,6 +1772,7 @@ a:hover.back-to-top {
 	margin-top: 0.125rem;
 	margin-bottom: 0.375rem;
 }
+
 
 
 /*************************/
@@ -1677,6 +2061,339 @@ a:hover.back-to-top {
 }
 
 /* end of min-width 992px */
+
+/* Min-width 768px to 991px */
+@media screen 
+ and (max-device-width: 413px) 
+ and (min-device-width: 358px) 
+{ 
+    
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 900;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -70px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+  
+
+}
+
+/* Min-width 768px to 991px */
+@media screen 
+ and (max-device-width: 459px) 
+ and (min-device-width: 414px) 
+{ 
+    .merch {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -20px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 100px;
+        margin-left: -100px;
+        
+      }
+
+}
+
+
+/* Min-width 768px to 991px */
+@media screen 
+ and (max-device-width: 514px) 
+ and (min-device-width: 459px) 
+{ 
+    .merch {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -0px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 100px;
+        margin-left: -100px;
+        
+      }
+
+}
+
+
+/* Min-width 768px to 991px */
+@media screen 
+ and (max-device-width: 575px) 
+ and (min-device-width: 515px) 
+{ 
+    .merch {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -10px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 100px;
+        margin-left: -100px;
+        
+      }
+
+}
+
+/* Min-width 768px to 991px */
+@media screen 
+ and (max-device-width: 991px) 
+ and (min-device-width: 768px) 
+{ 
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -40px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 5px;
+        margin-left: -100px;
+        
+      }
+
+}
+
+/* Min-width 991px to 1198px */
+@media screen 
+ and (max-device-width: 1198px) 
+ and (min-device-width: 991px) 
+{ 
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -60px;
+        margin-left: -100px;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 5px;
+        margin-left: -100px;
+        
+      }
+
+}
+@media (max-width: 1199px)  {
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px;
+        margin-left: -100px;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 5px;
+        margin-left: -100px;
+        
+      }
+   
+}
 
 
 /* Min-width 1200px */
