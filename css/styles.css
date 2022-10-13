@@ -1193,11 +1193,9 @@ input[type='checkbox'] {
     opacity: 0.1;
   }
   
-  .card-body {
-    /* height: 255px; */
+  /* .card-body {
     background: #fff;
-    border-radius: 0 0 25px 25px;
-  }
+  } */
   
   .product-title {
     padding: 20px 20px 5px 20px;
@@ -2070,7 +2068,7 @@ a:hover.back-to-top {
  and (min-device-width: 175px) 
 { 
     
-    .product-price {
+    /* .product-price {
         position: absolute;
         background: #0191FB;
         padding: 7px 10px !important;
@@ -2098,7 +2096,7 @@ a:hover.back-to-top {
         margin-left: -120px !important;
         
       }
-  
+   */
 
 }
 
@@ -2108,7 +2106,7 @@ a:hover.back-to-top {
  and (min-device-width: 222px) 
 { 
     
-    .product-price {
+    /* .product-price {
         position: absolute;
         background: #0191FB;
         padding: 7px 10px !important;
@@ -2135,7 +2133,7 @@ a:hover.back-to-top {
         margin-top: -40px !important;
         margin-left: -120px !important;
         
-      }
+      } */
   
 
 }
@@ -2146,7 +2144,7 @@ a:hover.back-to-top {
  and (min-device-width: 222px) 
 { 
     
-    .product-price {
+    /* .product-price {
         position: absolute;
         background: #0191FB;
         padding: 7px 10px;
@@ -2173,7 +2171,7 @@ a:hover.back-to-top {
         margin-top: -10px !important;
         margin-left: -130px !important;
         
-      }
+      } */
   
 
 }
@@ -2184,7 +2182,7 @@ a:hover.back-to-top {
  and (min-device-width: 256px) 
 { 
     
-    .product-price {
+    /* .product-price {
         position: absolute;
         background: #0191FB;
         padding: 7px 10px;
@@ -2211,7 +2209,7 @@ a:hover.back-to-top {
         margin-top: 20px !important;
         margin-left: -130px !important;
         
-      }
+      } */
   
 
 }
@@ -2221,7 +2219,7 @@ a:hover.back-to-top {
  and (max-device-width: 456px) 
  and (min-device-width: 315px) 
 { 
-    .merch {
+    /* .merch {
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -2266,7 +2264,7 @@ a:hover.back-to-top {
         margin-top: 20px !important;
         margin-left: -120px !important;
         
-      }
+      } */
 
 }
 
@@ -2276,8 +2274,8 @@ a:hover.back-to-top {
  and (max-device-width: 496px) 
  and (min-device-width: 456px) 
 { 
-    .merch {
-        margin-left: 40px;
+    /*.merch {
+         margin-left: 40px;
         margin-right: 40px;
     }
     .product-price {
@@ -2321,7 +2319,7 @@ a:hover.back-to-top {
         margin-top: 51px !important;
         margin-left: -120px !important;
         
-      }
+      } */
 
 }
 
@@ -2331,7 +2329,7 @@ a:hover.back-to-top {
  and (max-device-width: 575px) 
  and (min-device-width: 496px) 
 { 
-    .merch {
+    /* .merch {
         margin-left: 60px;
         margin-right: 60px;
     }
@@ -2348,7 +2346,7 @@ a:hover.back-to-top {
         margin-top: -30px !important;
         margin-left: -120px !important;
         box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
-      }
+      } 
       .product-title {
         padding: 20px 20px 5px 20px;
         display: block;
@@ -2364,7 +2362,7 @@ a:hover.back-to-top {
        
         text-transform: uppercase;
       }
-      .paystack-buynow {
+       .paystack-buynow {
         position: absolute;
        
         padding: 7px 20px;
@@ -2376,7 +2374,7 @@ a:hover.back-to-top {
         margin-top: 51px !important;
         margin-left: -120px !important;
         
-      }
+      } */
 
 }
 
@@ -2385,7 +2383,7 @@ a:hover.back-to-top {
  and (max-device-width: 991px) 
  and (min-device-width: 768px) 
 { 
-    .product-price {
+    /* .product-price {
         position: absolute;
         background: #0191FB;
         padding: 7px 15px;
@@ -2398,7 +2396,7 @@ a:hover.back-to-top {
         margin-top: -40px !important;
         margin-left: -40px !important;
         box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
-      }
+      } 
       .product-title {
         padding: 20px 20px 5px 20px;
         display: block;
@@ -2414,7 +2412,7 @@ a:hover.back-to-top {
        
         text-transform: uppercase;
       }
-      .paystack-buynow {
+       .paystack-buynow {
         position: absolute;
        
         padding: 7px 20px;
@@ -2426,7 +2424,7 @@ a:hover.back-to-top {
         margin-top: 5px;
         margin-left: -100px;
         
-      }
+      } */
 
 }
 
@@ -2435,7 +2433,7 @@ a:hover.back-to-top {
  and (max-device-width: 1198px) 
  and (min-device-width: 991px) 
 { 
-    .product-price {
+    /* .product-price {
         position: absolute;
         background: #0191FB;
         padding: 7px 15px;
@@ -2476,11 +2474,11 @@ a:hover.back-to-top {
         margin-top: 5px;
         margin-left: -100px;
         
-      }
+      } */
 
 }
 @media (max-width: 1199px)  {
-    .product-price {
+    /* .product-price {
         position: absolute;
         background: #0191FB;
         padding: 7px 15px;
@@ -2521,7 +2519,7 @@ a:hover.back-to-top {
         margin-top: 5px;
         margin-left: -100px;
         
-      }
+      } */
    
 }
 
