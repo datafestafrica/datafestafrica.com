@@ -498,14 +498,17 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem;
+	/* top: 3.25rem; */
+    top:0;
 	/* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	padding-right: 1rem;
 	padding-left: 1rem;
+    padding-top: 3rem;
 	overflow-y: auto;
 	visibility: hidden;
+    z-index: -1;
 	background-color: #0191FB;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
@@ -2061,11 +2064,124 @@ a:hover.back-to-top {
 }
 
 /* end of min-width 992px */
+/* Min-width 768px to 991px */
+@media screen 
+ and (max-device-width: 222px) 
+ and (min-device-width: 175px) 
+{ 
+    
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 10px !important;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px !important;
+        font-weight: 100 !important;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -90px !important;
+        margin-left: -100px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -120px !important;
+        
+      }
+  
+
+}
 
 /* Min-width 768px to 991px */
 @media screen 
- and (max-device-width: 413px) 
- and (min-device-width: 358px) 
+ and (max-device-width: 222px) 
+ and (min-device-width: 222px) 
+{ 
+    
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 10px !important;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px !important;
+        font-weight: 800 !important;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -90px !important;
+        margin-left: -190px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -120px !important;
+        
+      }
+  
+
+}
+
+/* Min-width 768px to 991px */
+@media screen 
+ and (max-device-width: 256px) 
+ and (min-device-width: 222px) 
+{ 
+    
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 900;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -60px !important;
+        margin-left: -130px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: -10px !important;
+        margin-left: -130px !important;
+        
+      }
+  
+
+}
+
+/* Min-width 768px to 991px */
+@media screen 
+ and (max-device-width: 315px) 
+ and (min-device-width: 256px) 
 { 
     
     .product-price {
@@ -2079,8 +2195,22 @@ a:hover.back-to-top {
         color: #fff;
         border-radius: 7px;
         margin-top: -40px !important;
-        margin-left: -70px !important;
+        margin-left: -130px !important;
         box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 20px !important;
+        margin-left: -130px !important;
+        
       }
   
 
@@ -2088,8 +2218,8 @@ a:hover.back-to-top {
 
 /* Min-width 768px to 991px */
 @media screen 
- and (max-device-width: 459px) 
- and (min-device-width: 414px) 
+ and (max-device-width: 456px) 
+ and (min-device-width: 315px) 
 { 
     .merch {
         margin-left: 30px;
@@ -2106,7 +2236,7 @@ a:hover.back-to-top {
         color: #fff;
         border-radius: 7px;
         margin-top: -40px !important;
-        margin-left: -20px !important;
+        margin-left: -120px !important;
         box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
       }
       .product-title {
@@ -2133,8 +2263,8 @@ a:hover.back-to-top {
         font-size: 24px;
         font-weight: 200;
         border-radius: 7px;
-        margin-top: 100px;
-        margin-left: -100px;
+        margin-top: 20px !important;
+        margin-left: -120px !important;
         
       }
 
@@ -2143,8 +2273,8 @@ a:hover.back-to-top {
 
 /* Min-width 768px to 991px */
 @media screen 
- and (max-device-width: 514px) 
- and (min-device-width: 459px) 
+ and (max-device-width: 496px) 
+ and (min-device-width: 456px) 
 { 
     .merch {
         margin-left: 40px;
@@ -2160,8 +2290,8 @@ a:hover.back-to-top {
         font-weight: 200;
         color: #fff;
         border-radius: 7px;
-        margin-top: -40px !important;
-        margin-left: -0px !important;
+        margin-top: -30px !important;
+        margin-left: -120px !important;
         box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
       }
       .product-title {
@@ -2188,8 +2318,8 @@ a:hover.back-to-top {
         font-size: 24px;
         font-weight: 200;
         border-radius: 7px;
-        margin-top: 100px;
-        margin-left: -100px;
+        margin-top: 51px !important;
+        margin-left: -120px !important;
         
       }
 
@@ -2199,7 +2329,7 @@ a:hover.back-to-top {
 /* Min-width 768px to 991px */
 @media screen 
  and (max-device-width: 575px) 
- and (min-device-width: 515px) 
+ and (min-device-width: 496px) 
 { 
     .merch {
         margin-left: 60px;
@@ -2215,8 +2345,8 @@ a:hover.back-to-top {
         font-weight: 200;
         color: #fff;
         border-radius: 7px;
-        margin-top: -40px !important;
-        margin-left: -10px !important;
+        margin-top: -30px !important;
+        margin-left: -120px !important;
         box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
       }
       .product-title {
@@ -2243,8 +2373,8 @@ a:hover.back-to-top {
         font-size: 24px;
         font-weight: 200;
         border-radius: 7px;
-        margin-top: 100px;
-        margin-left: -100px;
+        margin-top: 51px !important;
+        margin-left: -120px !important;
         
       }
 
