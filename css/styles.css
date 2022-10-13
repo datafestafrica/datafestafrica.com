@@ -1133,7 +1133,8 @@ input[type='checkbox'] {
   
   .merch {
     border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+    border: 2px solid #dfdfdf;
+    box-shadow: 5px 5px 5px #dfdfdf;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -1193,7 +1194,7 @@ input[type='checkbox'] {
   }
   
   .card-body {
-    height: 255px;
+    /* height: 255px; */
     background: #fff;
     border-radius: 0 0 25px 25px;
   }
@@ -1333,7 +1334,9 @@ input[type='checkbox'] {
   }
   
   .product-price {
-    position: absolute;
+    /* position: absolute; */
+	position: relative;
+	margin-top: 20px;
     background: #0191FB;
     padding: 7px 20px;
     text-align: center;
@@ -1342,8 +1345,6 @@ input[type='checkbox'] {
     font-weight: 200;
     color: #fff;
     border-radius: 7px;
-    margin-top: -13px;
-    margin-left: -130px;
     box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
   }
   
@@ -1351,17 +1352,16 @@ input[type='checkbox'] {
     margin-left: 9px;
   }
   .paystack-buynow {
-    position: absolute;
-   
+    position: relative;
+	margin: 0px;
     padding: 7px 20px;
     text-align: center;
     display: inline-block;
     font-size: 24px;
     font-weight: 200;
     border-radius: 7px;
-    margin-top: 35px;
-    margin-left: -100px;
-    
+	margin-top: 20px;
+	margin-bottom: 20px;
   }
   
   
