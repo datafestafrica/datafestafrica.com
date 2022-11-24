@@ -643,23 +643,55 @@ input[type='checkbox'] {
 
 .header .countdown #clock .counter-number {
 	display: inline-block;
-	width: 7.25rem;
-	height: 7.25rem;
+	/* width: 7.25rem; */
+	/* height: 7.25rem; */
 	margin-right: 0.5rem;
 	margin-bottom: 1.25rem;
 	margin-left: 0.5rem;
 	padding-top: 2.5rem;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
-	font-weight: 400;
-	font-size: 2.25rem;
+	/* border: 2px solid #ffffff; */
+	border-radius: 5%;
+	font-weight: 800;
+	/* font-size: 2.25rem;
 	line-height: 1.25rem;
-	text-align: center;
+	text-align: center;  */
+    /* background-color: #ffffff;
+    color : #000 */
 }
+.header .countdown #clock .counter-number .date {
+    color: #fff;
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #ffffff;
+    font-size: 3.25rem;
+	line-height: 3.25rem;
+	padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    border-radius: 5%;
+    text-align: center;
+    
+}
+.header .countdown #clock .counter-number .date-1 {
+    color: #fff;
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #ffffff;
+    font-size: 3.25rem;
+	line-height: 3.25rem;
+    /* margin-left: 0.0rem; */
+	padding: 1.3rem 0.7rem 1.3rem 0.7rem;
+    border-radius: 5%;
+    text-align: center;
+    
+}
+.register{
+    color: #000 !important;
+    background-color: #08F5DA  !important;
+    
 
+}
 .header .countdown #clock .counter-number .timer-text {
-	font-weight: 400;
-	font-size: 0.75rem;
+	font-weight: 800;
+	font-size: 1.25rem;
 	line-height: 1rem;
 	text-align: center;
 }
@@ -667,6 +699,7 @@ input[type='checkbox'] {
 .header .h1-large {
 	margin-bottom: 1.125rem;
 	color: #ffffff;
+    font-family: 'Poppins';
 }
 
 .header .p-large {
