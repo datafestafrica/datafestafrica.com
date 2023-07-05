@@ -678,7 +678,7 @@ input[type='checkbox'] {
     font-size: 3.25rem;
 	line-height: 3.25rem;
     /* margin-left: 0.0rem; */
-	padding: 1.3rem 0.7rem 1.3rem 0.7rem;
+	padding: 1.2rem 1.5rem 1.2rem 1.5rem;
     border-radius: 5%;
     text-align: center;
     
@@ -1942,7 +1942,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar .navbar-nav {
-		margin-top: 0;
+		margin-top: -50px !important;
 		margin-bottom: 0;
 	}
 
@@ -1962,6 +1962,7 @@ a:hover.back-to-top {
 
 	.navbar .social-icons {
 		margin-left: 0.5rem;
+        display: none;
 	}
 
 	.navbar .fa-stack {
@@ -2095,13 +2096,24 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 
-/* end of min-width 992px */
-/* Min-width 768px to 991px */
+
+/* Min-width 175px to 222px */
 @media screen 
  and (max-device-width: 222px) 
  and (min-device-width: 175px) 
 { 
-    
+    .navbar .navbar-brand {
+        font-size: 9px !important;
+        margin-top: -60px !important;
+    }
+    .navbar .navbar-brand img{
+        width: 20px;
+        height: 20px;
+    }
+    .header .countdown #clock .counter-number {
+        padding-top: 0rem;
+        
+    }
     .product-price {
         position: absolute;
         background: #0191FB;
@@ -2134,7 +2146,7 @@ a:hover.back-to-top {
 
 }
 
-/* Min-width 768px to 991px */
+/* Min-width 222px to 222px */
 @media screen 
  and (max-device-width: 222px) 
  and (min-device-width: 222px) 
@@ -2172,12 +2184,56 @@ a:hover.back-to-top {
 
 }
 
-/* Min-width 768px to 991px */
+/* Min-width 223px to 255px */
 @media screen 
- and (max-device-width: 256px) 
- and (min-device-width: 222px) 
+ and (max-device-width: 255px) 
+ and (min-device-width: 223px) 
 { 
-    
+    .navbar .navbar-brand {
+        font-size: 12px !important;
+        margin-top: -50px !important;
+    }
+    .navbar .navbar-brand img{
+        width: 40px;
+        height: 40px;
+    }
+    .header .countdown #clock .counter-number {
+        /* display: inline-block; */
+        /* width: 7.25rem; */
+        /* height: 7.25rem; */
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 0.4rem;
+        border-radius: 5%;
+        font-weight: 700;
+        
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        padding: 1rem 1.4rem 1rem 1.4rem;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        padding: 1rem 1.4rem 1rem 1.4rem;
+        
+    }
+    .header .countdown #clock .counter-number .timer-text {
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
     .product-price {
         position: absolute;
         background: #0191FB;
@@ -2210,12 +2266,59 @@ a:hover.back-to-top {
 
 }
 
-/* Min-width 768px to 991px */
+/* Min-width 256px to 263px */
 @media screen 
- and (max-device-width: 315px) 
+ and (max-device-width: 263px) 
  and (min-device-width: 256px) 
 { 
+    .navbar .navbar-brand {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 14px !important;
+        margin-top: -50px !important;
+    }
+    .navbar .navbar-brand img{
+        width: 46px;
+        height: 46px;
+    }
+    .header .countdown {
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
     
+    .header .countdown #clock .counter-number {
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 0.4rem;
+        border-radius: 5%;
+        font-weight: 800;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 1rem 1.4rem 1rem 1.4rem;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 1rem 1.4rem 1rem 1.4rem;
+        
+    }
+    .header .countdown #clock .counter-number .timer-text {
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
     .product-price {
         position: absolute;
         background: #0191FB;
@@ -2248,11 +2351,437 @@ a:hover.back-to-top {
 
 }
 
-/* Min-width 768px to 991px */
+/* Min-width 264px to 270px */
 @media screen 
- and (max-device-width: 456px) 
+ and (max-device-width: 270px) 
+ and (min-device-width: 264px) 
+{ 
+    .navbar .navbar-brand {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 14px !important;
+        margin-top: -50px !important;
+    }
+    .navbar .navbar-brand img{
+        width: 46px;
+        height: 46px;
+    }
+    .header .countdown {
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
+    
+    .header .countdown #clock .counter-number {
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 0rem;
+        border-radius: 5%;
+        font-weight: 700;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        padding:   0.4rem 0.6rem 0.4rem 0.6rem;
+        
+    }
+    .header .countdown #clock .counter-number .timer-text {
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 900;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -130px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 20px !important;
+        margin-left: -130px !important;
+        
+      }
+  
+
+}
+
+/* Min-width 271px to 315px */
+@media screen 
+ and (max-device-width: 315px) 
+ and (min-device-width: 271px) 
+{ 
+    .navbar .navbar-brand {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 14px !important;
+        margin-top: -50px !important;
+    }
+    .navbar .navbar-brand img{
+        width: 46px;
+        height: 46px;
+    }
+    .header .countdown {
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
+    
+    .header .countdown #clock .counter-number {
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 0rem;
+        border-radius: 5%;
+        font-weight: 500;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+        
+    }
+    .header .countdown #clock .counter-number .timer-text {
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 900;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -130px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 20px !important;
+        margin-left: -130px !important;
+        
+      }
+  
+
+}
+
+/* Min-width 315px to 396px */
+@media screen 
+ and (max-device-width: 396px) 
  and (min-device-width: 315px) 
 { 
+    .navbar .navbar-brand {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 17px !important;
+        margin-top: -50px !important;
+    }
+    .navbar .navbar-brand  img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .header .countdown {
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
+    
+    .header .countdown #clock .counter-number {
+        /* display: inline-block; */
+        /* width: 7.25rem; */
+        /* height: 7.25rem; */
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 0rem;
+        border-radius: 5%;
+        font-weight: 700;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+        
+    }
+    .header .countdown #clock .counter-number .timer-text {
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+    .merch {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -120px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 20px !important;
+        margin-left: -120px !important;
+        
+      }
+
+}
+/* Min-width 397px to 424px */
+@media screen 
+ and (max-device-width: 424px) 
+ and (min-device-width: 397px) 
+{ 
+    .navbar .navbar-brand {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 22px !important;
+        margin-top: -50px !important;
+    }
+    .navbar .navbar-brand  img{
+        width: 56px;
+        height: 56px;
+    }
+    
+    .header .countdown {
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
+    
+    .header .countdown #clock .counter-number {
+        /* display: inline-block; */
+        /* width: 7.25rem; */
+        /* height: 7.25rem; */
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 0rem;
+        border-radius: 5%;
+        font-weight: 700;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 0.8rem 1rem 0.8rem 1rem;
+    
+        
+    }
+    .header .countdown #clock .counter-number .timer-text {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .merch {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -40px !important;
+        margin-left: -120px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 20px !important;
+        margin-left: -120px !important;
+        
+      }
+
+}
+/* Min-width 425px to 456px */
+@media screen 
+ and (max-device-width: 456px) 
+ and (min-device-width: 425px) 
+{ 
+    .navbar .navbar-brand {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 25px !important;
+    }
+
+    .header .countdown {
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
+    
+    .header .countdown #clock .counter-number {
+        /* display: inline-block; */
+        /* width: 7.25rem; */
+        /* height: 7.25rem; */
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 2.5rem;
+        border-radius: 5%;
+        font-weight: 700;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding: 1rem 1.2rem 1rem 1.2rem;
+        border-radius: 5%;
+        text-align: center;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding: 1rem 1.2rem 1rem 1.2rem;
+    
+        
+    }
     .merch {
         margin-left: 30px;
         margin-right: 30px;
@@ -2303,11 +2832,50 @@ a:hover.back-to-top {
 }
 
 
-/* Min-width 768px to 991px */
+/* Min-width 456px to 496px */
 @media screen 
  and (max-device-width: 496px) 
  and (min-device-width: 456px) 
 { 
+    .header .countdown {
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
+    
+    .header .countdown #clock .counter-number {
+        /* display: inline-block; */
+        /* width: 7.25rem; */
+        /* height: 7.25rem; */
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 2.5rem;
+        border-radius: 5%;
+        font-weight: 700;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding: 1rem 1.2rem 1rem 1.2rem;
+        border-radius: 5%;
+        text-align: center;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding: 1rem 1.2rem 1rem 1.2rem;
+    
+        
+    }
     .merch {
         margin-left: 40px;
         margin-right: 40px;
@@ -2358,11 +2926,135 @@ a:hover.back-to-top {
 }
 
 
-/* Min-width 768px to 991px */
+/* Min-width 507px to 497px */
+@media screen 
+ and (max-device-width: 507px) 
+ and (min-device-width: 497px) 
+{ 
+    .header .countdown {
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
+    
+    .header .countdown #clock .counter-number {
+        /* display: inline-block; */
+        /* width: 7.25rem; */
+        /* height: 7.25rem; */
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 2.5rem;
+        border-radius: 5%;
+        font-weight: 700;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding: 1rem 1.2rem 1rem 1.2rem;
+        border-radius: 5%;
+        text-align: center;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding: 1rem 1.2rem 1rem 1.2rem;        
+    }
+
+    .merch {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .product-price {
+        position: absolute;
+        background: #0191FB;
+        padding: 7px 15px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+        color: #fff;
+        border-radius: 7px;
+        margin-top: -30px !important;
+        margin-left: -120px !important;
+        box-shadow: -10px 20px 15px -10px rgba(17, 71, 233, 0.3);
+      }
+      .product-title {
+        padding: 20px 20px 5px 20px;
+        display: block;
+        font-size: 12px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .product-caption {
+        display: block;
+        padding: 0 20px;
+        font-size: 11px;
+       
+        text-transform: uppercase;
+      }
+      .paystack-buynow {
+        position: absolute;
+       
+        padding: 7px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 200;
+        border-radius: 7px;
+        margin-top: 51px !important;
+        margin-left: -120px !important;
+        
+      }
+
+}
+
+/* Min-width 508px to 575px */
 @media screen 
  and (max-device-width: 575px) 
- and (min-device-width: 496px) 
+ and (min-device-width: 508px) 
 { 
+    .header .countdown #clock .counter-number {
+        /* display: inline-block; */
+        /* width: 7.25rem; */
+        /* height: 7.25rem; */
+        margin-right: 0.5rem;
+        margin-bottom: 1.25rem;
+        margin-left: 0.5rem;
+        padding-top: 2.5rem;
+        border-radius: 5%;
+        font-weight: 700;
+    }
+    .header .countdown #clock .counter-number .date {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding: 1rem 1.2rem 1rem 1.2rem;
+        border-radius: 5%;
+        text-align: center;
+        
+    }
+    .header .countdown #clock .counter-number .date-1 {
+        color: #fff;
+        background-color: #ffffff;
+        color: #000;
+        border: 2px solid #ffffff;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        padding: 1rem 1.2rem 1rem 1.2rem;        
+    }
     .merch {
         margin-left: 60px;
         margin-right: 60px;
@@ -2511,6 +3203,8 @@ a:hover.back-to-top {
       }
 
 }
+
+/* Max-width 1198px */
 @media (max-width: 1199px)  {
     .product-price {
         position: absolute;
