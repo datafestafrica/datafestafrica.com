@@ -1813,6 +1813,33 @@ a:hover.back-to-top {
 /*************************/
 /*     Media Queries     */
 /*************************/
+/* Min-width 100px */
+@media (min-width: 100px) {
+    .navbar.top-nav-collapse {
+		background: linear-gradient(to bottom left, #08F5DA, #0191FB);
+		border-bottom: 1px solid #6cbcf5;
+        height: 50px;
+	}
+}
+/* Min-width 424px */
+@media (min-width: 223px) {
+    .navbar.top-nav-collapse {
+		background: linear-gradient(to bottom left, #08F5DA, #0191FB);
+		border-bottom: 1px solid #6cbcf5;
+        height: 70px;
+	}
+}
+
+/* Min-width 424px */
+@media (min-width: 424px) {
+    .navbar.top-nav-collapse {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		background: linear-gradient(to bottom left, #08F5DA, #0191FB);
+		border-bottom: 1px solid #6cbcf5;
+	}
+}
+
 /* Min-width 768px */
 @media (min-width: 768px) {
 
@@ -1826,6 +1853,12 @@ a:hover.back-to-top {
 		height: 100px;
 	}
 
+	.navbar.top-nav-collapse {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		background: linear-gradient(to bottom left, #08F5DA, #0191FB);
+		border-bottom: 1px solid #6cbcf5;
+	}
 	/* end of header */
 
 
