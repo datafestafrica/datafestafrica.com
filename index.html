@@ -82,6 +82,49 @@
             color: white;
             transform: rotateY(180deg);
           }
+
+
+          .form-control {
+            display: block;
+            width: 100%;
+            min-height: calc(1.5em + .75rem + 2px);
+            padding: .575rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 52px;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #0191FB;
+            outline: 0;
+            box-shadow: none;
+        }
+        .border-rad{
+            border-top-right-radius: 28px;
+            border-bottom-right-radius: 28px;
+            color: #fff;
+            font-weight: bold;
+            /* background-color: #f9a826; */
+            border-color: linear-gradient(to bottom left, #08F5DA, #0191FB);
+            background: linear-gradient(to bottom left, #08F5DA, #0191FB);
+        }
+        .border-rad:hover{
+        
+            background-color: #0191FB;
+            border-color: #0191FB;
+
+        }
     </style>
 
 </head>
@@ -245,7 +288,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6 ">
-                    <p class="text-center">Ticket for DataFestAfrica 2023 is yet to be sold!</p>  
+                    <p class="text-center">Ticket for DataFestAfrica 2023 is yet to be sold!</p> 
+                    
+                    <p>Stay updated with DataFestAfrica event, DCA membership, Job opportunities, volunteer opportunities and Resource Learning</p>
+                    <div class="mx-5">
+                        <form action="#" class="input-group mb-3 mt-4">
+                           <input type="email" class="form-control" placeholder="enter email" aria-label="email" aria-describedby="button-addon2">
+                           <button class="btn btn-success border-rad" type="button" id="button-addon2">Subscribe</button>
+                        </form>
+                     </div>
                                     
                     <table class="table text-center">
                         <thead>
@@ -307,7 +358,7 @@
                     <!-- <h6 class="text-center">If you're interested in sponsoring at .</h6> -->
                     <p class="text-center">If your organization is interested in sponsoring the DataFestAfrica event, kindly go through
                         our sponsorship deck.</p>
-                    <a class="h5" href="./docs/sponsors/DataFestAfrica 2023 Sponsorship Deck.pdf">
+                    <a class="h5" href="./docs/sponsors/DataFestAfrica_2023_Sponsorship_Deck.pdf">
                         <p class="h5 text-center">Download the DataFestAfrica sponsorship deck here</p></a>
                 </div>
             </div>
