@@ -40,13 +40,14 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 
-<body data-spy="scroll" data-target=".fixed-top">
+<body data-spy="scroll" data-target="">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/logo/logo-96x96-transparent.png"
-                    alt="alternative"></a>
+            <!-- Image Logo -->
+            <a class="navbar-brand" href="index.html" style="font-family:Poppins; font-size: 26px; text-decoration:None"><img src="images/logo/logo-96x96-transparent.png"
+                alt="DataFestAfrica"> DataFestAfrica</a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -89,18 +90,63 @@
         </div>
     </nav>
     <!-- end of navigation -->
-
-    <!-- Header -->
-    <header class="ex-header">
+    <header id="header" class="datathon_header header">
         <div class="container">
             <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <h1>DATAFESTAFRICA DATATHON</h1>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of ex-header -->
-    <!-- end of header -->
+                <div class="col-lg-12">
+                    <!-- <div class="countdown">
+                        <span id="clock"></span>   
+                    </div><br> -->
+                    <h3 class="h1-large">DATATHON</h3>
+                    <!-- <h1 class="h5-large"></h1> -->
+                    <h1 class="p-large">The Data-Driven Business: Unlocking the Power of your Data</h1>
+                    <p>DataFestAfrica showcases all career professions within the data
+                        space in Africa.</p>
+                    <p>If you are a Data Analyst, Data Scientist, Data Engineer, AI/ML Engineer, Low Code Developer,
+                        Student, Researcher, Data Manager, Data Consumer or Recruiter within this space, then
+                        DataFestAfrica is for YOU.</p>                    
+                </div>
+            </div>
+        </div>
+        <svg class="header-decoration" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+            viewBox="0 0 1920 200">
+            <defs>
+                <style>
+                    .cls-1,
+                    .cls-2,
+                    .cls-3,
+                    .cls-4 {
+                        fill: #f6fbfd;
+                    }
+
+                    .cls-1 {
+                        opacity: 0.1;
+                    }
+
+                    .cls-2 {
+                        opacity: 0.22;
+                    }
+
+                    .cls-3 {
+                        opacity: 0.16;
+                    }
+                </style>
+            </defs>
+            <title>header-decoration</title>
+            <path class="cls-1"
+                d="M0,19.824S94.869-5.228,208,4.061C373.224,17.627,473.914,61.173,573.11,76.875,714.1,99.194,919.592,92.924,919.592,92.924L966.09,202H0Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-2"
+                d="M0,149.525S169.63,98.689,354.121,68.133,726.1,23.025,873.095,21.57,1171.58,17.2,1393.569,36.121,1920,133.66,1920,133.66l0,68.34H0V149.525Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-3"
+                d="M902.912,202S1252.576,80.034,1323.072,58.207s183.168-42.462,280.486-51.42C1743.051-6.052,1920,20.814,1920,20.814L1920,202H902.912Z"
+                transform="translate(0 -1.995)" />
+            <path class="cls-4"
+                d="M0,49.323s225.322,64.933,394.624,75.227C535,133.085,627,125.046,726,112.7c82.888-10.337,155.627-31.195,263.741-55.618,135.934-30.708,239.987-48.165,355.83-50.06,124.494-2.037,219.35,4.192,335.429,27.089,131.427,25.925,239,60.819,239,60.819L1920,202H0Z"
+                transform="translate(0 -1.995)" />
+        </svg>
+    </header>
 
     <!-- Datathon -->
     <div class="ex-basic-1 pt-4">
@@ -150,16 +196,19 @@
             </div> -->
             <div class="row">
                 <div class="col-xl-12 m-4">
-                    <h4 class="text-black-50">Rules</h4>
-                    <ol>
+                    <h4 class="text-black-50">Team Formation</h4>
+                    <ul>
                         <!-- <li>Be at the event hall by 8:30 am as the datathon starts by 9 am</li> -->
-                        <li>The team must consist of at least 1 female</li>
-                        <li>Each Participants must have a ticket for DataFestAfrica 2023</li>
+                        <li>1 data scientist/machine learning engineer,</li>
+                        <li>1 data analyst and</li>
+                        <li>1 data engineer.</li>
                         <li>Your team must be participating from or representing 1 country</li>
+                        <li>Each Participants must have a ticket for DataFestAfrica 2023</li>
+                        <li>The team must consist of at least 1 female</li>
                         <!-- <li>To encourage inclusiveness, all team must have a lady/woman in their team</li> -->
                         <li>Participants cannot belong to more than one team</li>
                         <!-- <li>The Top 5 will present on Friday 14th Oct 2022 and the Winners announced on Saturday, Oct 15th 2022</li> -->
-                    </ol>
+                    </ul>
                 </div>
             </div>
             <div class="row">
@@ -167,7 +216,7 @@
                     <h4 class="text-black-50">How to Participate</h4>
                     <p>To join the Hackathon:</p>
                     <ol>
-                        <li>Register for the Datathon: <a href="https://tinyurl.com/dfadatathon23">Click here to register</a></li>
+                        <li>Register for the Datathon: <a style="color:red" href="https://tinyurl.com/dfadatathon23">Click here to register</a></li>
                         <!-- <li>Validate your team membership and attendance</li> -->
                         <!-- <li>Add team members to your profile</li> -->
                         <!-- <li>Your team profile must be completed before the deadline - 30th September 2022</li> -->
@@ -193,17 +242,19 @@
             <div class="row">
                 <div class="col-xl-12 m-4">
                     <h4 class="text-black-50">TOOLS TO BE USED</h4>
-                    <ol>
+                    <!-- <ol>
                         <li>SQL</li>
                         <li>Python/R and Libraries</li>
                         <li>Microsoft PowerBI</li>
-                    </ol>
+                    </ol> -->
+                    <p>The datathon is tool agnostic. You're free to use any tool(s) you prefer as long as it gets the job done. </p>
+                    
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>For any inquiries or feedback, please check out the FAQ below or send an email to
-                        <a href="mailto:Paulodaguvnor@gmail.com">Paulodaguvnor@gmail.com</a>
+                    <p style="color:green">For Enquiries: Please refer to the discord channel. All enquiries and questions will be answered there.
+                        <!-- <a href="mailto:Paulodaguvnor@gmail.com">Paulodaguvnor@gmail.com</a> -->
                     </p>
                 </div>
             </div>
@@ -211,19 +262,23 @@
                 <div class="col-xl-12 m-4">
                     <h4 class="text-black-50">FAQ?</h4>
                     <ol>
-                        <li>Where can I find the dataset: <span class="font-italic">It will be shared on the d-day, Oct 8th, 2022</span></li>
-                        <li>As a participant, can I join via zoom or any other virtual meeting platform:  
-                            <span class="font-italic">That depends on your team, only one persons is permitted to be virtual in a team of 3 but none in a team of 2.</span>
+                        <li>How many people are required per team?  <span class="font-italic">3 ideally, (1 DA, DE, DS/ML  each) </span></li>
+                        <li>Is there a required experience level required to participate in the Datahon?  
+                            <span class="font-italic">No, the datathon is open to all participants irrespective of experience level.</span>
                             </li>
-                        <li>Is the datathon event going to be streamed live: <span class="font-italic">No</span></li>
-                        <li>Do I need to buy a DataFestAfrica ticket to participate? <span class="font-italic">Yes</span></li>
-                        <li>Do I need to create/join a team before participating in the datathon? <span class="font-italic">Yes, we want datathon to be a team game.</span></li>
+                        <li>Is the datathon physical or virtual? <span class="font-italic">Hybrid</span></li>
+                        <li>Do I require a datafest ticket to participate in the datathon? <span class="font-italic">Yes</span></li>
+                        <li>Will competitors be allowed to use whatever tool? Are there specifics? <span class="font-italic">No Specifics. You are free to use any tool that works for you.</span></li>
+                        <li>What platform will the competition be hosted? <span class="font-italic">Diceytech.</span></li>
+                        <li>Can winners of last year participate again? <span class="font-italic">Yes, they can, but not as the same team from last year.  Each of them must belong to different teams.</span></li>
+                        <li>Where can I find the dataset? <span class="font-italic">It will be shared in due course. Details will be communicated on the discord channel.</span></li>
+                        <li>As a participant, can I join via zoom or any other virtual meeting platform? <span class="font-italic">The datathon is hybrid, you're at liberty to join remotely or physically.</span></li>
                     </ol>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <a class="m-4 btn-outline-lg page-scroll" href="https://forms.office.com/r/17zuBiUbKp">Register for Datathon</a>
+                    <a class="m-4 btn-outline-lg page-scroll" href="https://tinyurl.com/dfadatathon23">Register for Datathon</a>
                 </div>
             </div>
         </div>
