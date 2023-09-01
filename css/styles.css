@@ -623,12 +623,25 @@ input[type='checkbox'] {
 /*****************/
 /*    Header     */
 /*****************/
-.header {
+.home_header {
 	position: relative;
 
 	padding-top: 7rem;
 	padding-bottom: 9rem;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header/datafest_home.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://github.com/datafestafrica/datafestafrica.com/assets/58699961/474e58f3-e5d7-416f-92f7-dddd6ff2d76a");
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	background-position: center;
+
+}
+
+.datathon_header {
+	position: relative;
+
+	padding-top: 7rem;
+	padding-bottom: 9rem;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://github.com/datafestafrica/datafestafrica.com/assets/58699961/1a20363a-6ef1-41ed-9a38-6d0e74c5a507");
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
