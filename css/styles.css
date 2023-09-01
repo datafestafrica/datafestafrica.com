@@ -507,7 +507,7 @@ input[type='checkbox'] {
     padding-top: 3rem;
 	overflow-y: auto;
 	visibility: hidden;
-    z-index: -1;
+    z-index: 1;
 	background-color: #0191FB;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
@@ -1740,7 +1740,7 @@ h2{
 /******************************/
 a.back-to-top {
 	position: fixed;
-	z-index: 999;
+	z-index: 1;
 	right: 12px;
 	bottom: 12px;
 	display: none;
