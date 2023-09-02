@@ -43,6 +43,8 @@ html {
 	width: 100%;
 	height: 100%;
 	scroll-behavior: smooth;
+    position: fixed;
+    overflow: auto;
 }
 
 body,
@@ -466,7 +468,7 @@ input[type='checkbox'] {
 /*     Navigation     */
 /**********************/
 .navbar {
-	/*background-color: #0191FB;*/
+	/* background-color: #0191FB; */
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
@@ -518,7 +520,7 @@ input[type='checkbox'] {
 	visibility: visible;
 	-webkit-transform: translateX(-100%);
 	transform: translateX(-100%);
-    z-index: -1;
+    /* z-index: 1; */
 }
 
 .navbar .navbar-nav {
@@ -1741,7 +1743,7 @@ h2{
 /******************************/
 a.back-to-top {
 	position: fixed;
-	z-index: 1;
+	z-index: -1;
 	right: 12px;
 	bottom: 12px;
 	display: none;
