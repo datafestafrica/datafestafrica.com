@@ -45,6 +45,9 @@ html {
 	scroll-behavior: smooth;
     position: fixed;
     overflow: auto;
+    /* overflow-y: scroll;
+    */
+    /* overflow-x: hidden;  */
 }
 
 body,
