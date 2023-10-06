@@ -173,7 +173,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('.customer-logos-2').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
@@ -195,7 +195,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('.customer-logos-3').slick({
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
